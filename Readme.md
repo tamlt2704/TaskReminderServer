@@ -1,7 +1,7 @@
 
-
+poetry env use /usr/bin/python3
 poetry init
-poetry add fastapi uvicorn[standard]
+poetry add fastapi uvicorn[standard] sqlmodel
 
 to active virtualenv
     eval $(poetry env activate)    
@@ -9,4 +9,5 @@ to active virtualenv
 start the application
     uvicorn main:app --reload
 
-poetry add sqlmodel
+show installed packages
+    poetry show 
