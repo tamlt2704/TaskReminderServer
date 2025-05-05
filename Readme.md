@@ -14,3 +14,17 @@ show installed packages
 
 run pytests
     poetry run pytest -s
+
+
+# Login and create resource group
+az login
+az group create --name my-fastapi-rg --location eastus
+
+# Deploy Bicep
+az deployment group create \
+  --resource-group my-fastapi-rg \
+  --template-file bicep/main.bicep \
+  --parameters postgresAdminUsername=admin postgresAdminPassword=MySecretPwd123
+
+
+az group create -n taskReminder -l westus
