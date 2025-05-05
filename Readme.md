@@ -1,7 +1,7 @@
 
 poetry env use /usr/bin/python3
 poetry init
-poetry add fastapi uvicorn[standard] sqlmodel
+poetry add fastapi uvicorn[standard] sqlmodel pytest
 
 to active virtualenv
     eval $(poetry env activate)    
@@ -11,3 +11,6 @@ start the application
 
 show installed packages
     poetry show 
+
+run pytests
+    poetry run pytest -s
