@@ -1,13 +1,12 @@
+from typing import Annotated
+from fastapi import Depends
 from taskreminder.app import app, task_service
-
-@app.get("/")
-async def main_route():
-    return {"message": "Hello world"}
+from .auth import oauth2_scheme
 
 @app.get("/tasks")
-def get_tasks():
-    return task_service.get_all_tasks()
-
+async def get_tasks(token: Annotated[str, Depends(oauth2_scheme)]):
+    #return task_service.get_all_tasks()
+    return {"token": token}
 
 @app.post('/create_task')
 def create_task(task_pojo):

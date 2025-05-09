@@ -1,6 +1,8 @@
 from sqlmodel import Field, SQLModel, Column
 from enum import Enum
 from datetime import datetime, timezone
+from pydantic import BaseModel
+
 
 class ReminderType(Enum):
     EMAIL = "Email"
@@ -12,7 +14,9 @@ class BaseEntity(SQLModel):
     updated_at: datetime = Field(default_factory=lambda: datetime.now(timezone.utc), nullable=False, sa_column_kwargs={"onupdate": lambda: datetime.now(timezone.utc)})
 
 class User(BaseEntity, table=True):
-    name: str
+    username: str
+    disabled: bool | None = None
+    hashed_password: str
 
 class Task(BaseEntity, table=True):
     content: str
@@ -21,3 +25,7 @@ class Task(BaseEntity, table=True):
     created_by: int = Field(default=None, foreign_key="user.id")
     modified_by: int = Field(default=None, foreign_key="user.id")
     reminder_type: ReminderType = Field(default=ReminderType.EMAIL)
+
+class Token(BaseModel):
+    access_token: str
+    token_type: str

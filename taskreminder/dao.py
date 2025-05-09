@@ -33,3 +33,17 @@ class TaskDao:
             session.commit()
             session.refresh(task)
             return task
+        
+class UserDao:
+    def __init__(self, engine):
+        self.engine = engine
+
+    def get_session(self):
+        with Session(self.engine) as session:
+            return session
+
+    def find_user(self, username: str):
+        with self.get_session() as session:
+            statement = select(User).where(User.username == username)
+            results = session.exec(statement)
+            return results.first()

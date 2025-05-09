@@ -1,7 +1,9 @@
 
 poetry env use /usr/bin/python3
 poetry init
-poetry add fastapi uvicorn[standard] sqlmodel pytest
+poetry add fastapi[standard] uvicorn[standard] sqlmodel pytest
+#authentication
+poetry add pyjwt passlib[bcrypt]
 
 to active virtualenv
     eval $(poetry env activate)    
@@ -26,5 +28,34 @@ az deployment group create \
   --template-file bicep/main.bicep \
   --parameters postgresAdminUsername=admin postgresAdminPassword=MySecretPwd123
 
+install az within wsl
+    curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
 
-az group create -n taskReminder -l westus
+login
+    az login
+
+show my subscription list 
+    az account list --output table
+
+change subcription
+    az account set --subscription <subscription id>
+
+az group list --output table
+    list all my resource group
+
+create resource group
+    az group create --name DevResourceGroup --location westeurope
+
+list all resource group
+    az group list --output table
+
+delete resource group
+    az group delete --name TaskReminderServerGroup --yes
+
+deploy web app
+    az deployment group create \
+    --resource-group DevResourceGroup \
+    --template-file bicep\\main.bicep \
+    --parameters webAppName=TaskReminderServer
+
+
