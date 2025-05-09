@@ -17,8 +17,6 @@ task_service = TaskService(task_dao)
 user_dao = UserDao(engine)
 user_service = UserService(user_dao)
 
-
-
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     logger.info("Starting up the application...")

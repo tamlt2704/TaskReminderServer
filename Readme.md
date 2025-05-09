@@ -58,4 +58,7 @@ deploy web app
     --template-file bicep\\main.bicep \
     --parameters webAppName=TaskReminderServer
 
-
+docker build -t task-reminder-server-app .
+docker run -p 8000:8000 task-reminder-server-app
+docker tag task-reminder-server-app:latest tamlt2704/task-reminder-server-app:latest
+docker push tamlt2704/task-reminder-server-app
