@@ -7,7 +7,7 @@ from .models import * # for the init-db to work
 logger = logging.getLogger(__name__)
 
 load_dotenv()
-DATABASE_URL = os.getenv("DATABASE_URL", "sqlite:///./task.db")
+DATABASE_URL = os.getenv("DATABASE_URL", "sqlite:///./db.sqlite3")
 engine = create_engine(DATABASE_URL, echo=True)
 
 def init_db():

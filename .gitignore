@@ -5,3 +5,4 @@ logs
 *.db
 **/__pycache__/**
 taskserver.log
+db.sqlite3
