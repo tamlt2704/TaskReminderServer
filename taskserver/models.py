@@ -11,5 +11,6 @@ class TaskReminder(BaseEntity, TaskReminderBase, table=True):
     pass
 
 class User(BaseEntity, UserBase, table=True):
+    hashed_password: str | None = None
     class Config:
         table_args = (UniqueConstraint("email", name="unique_email"),)

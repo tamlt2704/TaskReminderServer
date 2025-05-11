@@ -1,8 +1,12 @@
-from fastapi import APIRouter, Depends, HTTPException
+from datetime import timedelta
+from typing import Annotated
+from fastapi import APIRouter, Depends, HTTPException, status
 import logging
 
+from fastapi.security import OAuth2PasswordRequestForm
 from sqlmodel import Session, select
-from taskserver.schemas import TaskReminderBase, UserBase, UserRead
+from taskserver.auth import ACCESS_TOKEN_EXPIRE_MINUTES, create_access_token, verify_password
+from taskserver.schemas import TaskReminderBase, Token, UserCreate, UserRead
 from .database import get_session
 from .crud import create_task_reminder, delete_task_by_id, save_user, find_user_by_email_pattern, find_user_by_email, get_task_by_id
 from .models import User
@@ -40,9 +44,8 @@ def remove_task(task_id: int, session: Session = Depends(get_session)):
 def get_tasks():
     return []
 
-
 @user_router.post("/")
-def create_user(user_base: UserBase, session: Session = Depends(get_session)):
+def create_user(user_base: UserCreate, session: Session = Depends(get_session)):
     existing_user = session.exec(select(User).filter_by(email=user_base.email)).first()
     if existing_user:
         raise HTTPException(status_code=400, detail="User already exists")

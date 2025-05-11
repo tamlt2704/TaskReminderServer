@@ -1,9 +1,9 @@
 
 from sqlmodel import Session, delete, select
 
-from taskserver.schemas import TaskReminderCreate, UserBase
+from taskserver.schemas import TaskReminderCreate, UserBase, UserCreate
 from taskserver.models import TaskReminder, User
-
+from .auth_util import get_password_hash
 
 def create_task_reminder(session: Session, data: TaskReminderCreate):
     reminder = TaskReminder.model_validate(data)        
@@ -12,8 +12,9 @@ def create_task_reminder(session: Session, data: TaskReminderCreate):
     session.refresh(reminder)
     return reminder
 
-def save_user(session: Session, user_data: UserBase):
-    user = User.model_validate(user_data)
+def save_user(session: Session, user_data: UserCreate):
+    user: User = User.model_validate(user_data)
+    user.hashed_password = get_password_hash(user_data.password)
     session.add(user)
     session.commit()
     session.refresh(user)

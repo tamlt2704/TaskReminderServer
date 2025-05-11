@@ -35,3 +35,10 @@ class UserBase(BaseModel):
 
 class UserRead(UserBase):
     pass
+
+class UserCreate(UserBase):
+    password: str = Field(min_length=8)
+
+class Token(BaseModel):
+    access_token: str
+    token_type: str

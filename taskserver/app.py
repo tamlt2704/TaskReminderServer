@@ -2,8 +2,10 @@ from fastapi import FastAPI
 import logging
 import logging.config
 from contextlib import asynccontextmanager
+
 from .database import init_db
 from .routes import task_router, user_router
+from .auth import auth_router
 
 logging.config.fileConfig(fname='log.conf', disable_existing_loggers=False)
 logger = logging.getLogger(__name__)
@@ -18,6 +20,7 @@ async def lifespan(app: FastAPI):
 app = FastAPI(lifespan=lifespan)
 app.include_router(task_router, prefix="/api/v1/tasks")
 app.include_router(user_router, prefix="/api/v1/users")
+app.include_router(auth_router)
 
 @app.get('/')
 def index():
