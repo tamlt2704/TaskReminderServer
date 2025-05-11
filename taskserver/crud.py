@@ -10,4 +10,6 @@ def create_task_reminder(session: Session, data: TaskReminderCreate):
     session.add(reminder)
     session.commit()
     session.refresh(reminder)
+    # user_pydantic = UserCreate(**user_db.dict(exclude={"id"}))  # Convert to Pydantic format
+    # print(user_pydantic)
     return reminder

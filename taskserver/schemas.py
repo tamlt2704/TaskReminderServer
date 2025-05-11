@@ -1,6 +1,5 @@
-from pydantic import BaseModel
-from datetime import datetime
-from typing import Optional
+from pydantic import BaseModel, Field, field_validator, validator
+from datetime import datetime, date
 from enum import Enum
 
 class ReminderType(str, Enum):
@@ -8,12 +7,18 @@ class ReminderType(str, Enum):
     slack = "slack"
 
 class TaskReminderBase(BaseModel):
-    run_time: datetime
+    scheduled_at: datetime
     assignee: str
-    content: str
+    content: str = Field(min_length=5, max_length=50)
     created_by: str
     modified_by: str
     reminder_type: ReminderType
+
+    @field_validator("scheduled_at")
+    def validate_password(scheduled_at):
+        if scheduled_at.date() < date.today():
+            raise ValueError("Scheduled should not be a past date")
+        return scheduled_at
 
 class TaskReminderCreate(TaskReminderBase):
     pass

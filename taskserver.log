@@ -541,3 +541,400 @@ CREATE TABLE taskreminder (
 2025-05-11 15:23:21,729 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("taskreminder")
 2025-05-11 15:23:21,730 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
 2025-05-11 15:23:21,730 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-11 15:47:31,704 - taskserver.app - INFO - Starting up the application...
+2025-05-11 15:47:31,705 - taskserver.database - INFO - init database
+2025-05-11 15:47:31,705 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 15:47:31,706 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("taskreminder")
+2025-05-11 15:47:31,706 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 15:47:31,707 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-11 15:48:24,589 - taskserver.app - INFO - Shutting down the application...
+2025-05-11 15:48:25,303 - taskserver.app - INFO - Starting up the application...
+2025-05-11 15:48:25,303 - taskserver.database - INFO - init database
+2025-05-11 15:48:25,304 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 15:48:25,304 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("taskreminder")
+2025-05-11 15:48:25,304 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 15:48:25,305 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-11 15:48:26,110 - taskserver.app - INFO - Shutting down the application...
+2025-05-11 15:48:26,742 - taskserver.app - INFO - Starting up the application...
+2025-05-11 15:48:26,742 - taskserver.database - INFO - init database
+2025-05-11 15:48:26,743 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 15:48:26,743 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("taskreminder")
+2025-05-11 15:48:26,743 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 15:48:26,744 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-11 15:48:30,970 - taskserver.app - INFO - Shutting down the application...
+2025-05-11 15:48:31,654 - taskserver.app - INFO - Starting up the application...
+2025-05-11 15:48:31,654 - taskserver.database - INFO - init database
+2025-05-11 15:48:31,655 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 15:48:31,655 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("taskreminder")
+2025-05-11 15:48:31,655 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 15:48:31,656 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-11 15:48:33,065 - taskserver.app - INFO - Shutting down the application...
+2025-05-11 15:48:33,720 - taskserver.app - INFO - Starting up the application...
+2025-05-11 15:48:33,721 - taskserver.database - INFO - init database
+2025-05-11 15:48:33,722 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 15:48:33,722 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("taskreminder")
+2025-05-11 15:48:33,723 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 15:48:33,723 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-11 15:48:34,277 - taskserver.app - INFO - Starting up the application...
+2025-05-11 15:48:34,278 - taskserver.database - INFO - init database
+2025-05-11 15:48:34,278 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 15:48:34,278 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("taskreminder")
+2025-05-11 15:48:34,279 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 15:48:34,279 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-11 15:48:35,285 - taskserver.app - INFO - Shutting down the application...
+2025-05-11 15:48:35,904 - taskserver.app - INFO - Starting up the application...
+2025-05-11 15:48:35,904 - taskserver.database - INFO - init database
+2025-05-11 15:48:35,905 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 15:48:35,905 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("taskreminder")
+2025-05-11 15:48:35,905 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 15:48:35,906 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-11 15:48:36,446 - taskserver.app - INFO - Starting up the application...
+2025-05-11 15:48:36,447 - taskserver.database - INFO - init database
+2025-05-11 15:48:36,447 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 15:48:36,447 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("taskreminder")
+2025-05-11 15:48:36,448 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 15:48:36,448 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-11 15:48:37,655 - taskserver.app - INFO - Shutting down the application...
+2025-05-11 15:48:38,425 - taskserver.app - INFO - Starting up the application...
+2025-05-11 15:48:38,425 - taskserver.database - INFO - init database
+2025-05-11 15:48:38,426 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 15:48:38,426 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("taskreminder")
+2025-05-11 15:48:38,426 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 15:48:38,427 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-11 15:48:47,374 - taskserver.app - INFO - Shutting down the application...
+2025-05-11 15:48:48,003 - taskserver.app - INFO - Starting up the application...
+2025-05-11 15:48:48,003 - taskserver.database - INFO - init database
+2025-05-11 15:48:48,004 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 15:48:48,004 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("taskreminder")
+2025-05-11 15:48:48,004 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 15:48:48,005 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-11 15:48:48,687 - taskserver.app - INFO - Starting up the application...
+2025-05-11 15:48:48,687 - taskserver.database - INFO - init database
+2025-05-11 15:48:48,688 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 15:48:48,688 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("taskreminder")
+2025-05-11 15:48:48,688 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 15:48:48,689 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-11 15:48:49,593 - taskserver.app - INFO - Shutting down the application...
+2025-05-11 15:48:50,171 - taskserver.app - INFO - Starting up the application...
+2025-05-11 15:48:50,172 - taskserver.database - INFO - init database
+2025-05-11 15:48:50,172 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 15:48:50,172 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("taskreminder")
+2025-05-11 15:48:50,173 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 15:48:50,173 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-11 15:48:52,482 - taskserver.app - INFO - Shutting down the application...
+2025-05-11 15:48:53,357 - taskserver.app - INFO - Starting up the application...
+2025-05-11 15:48:53,357 - taskserver.database - INFO - init database
+2025-05-11 15:48:53,358 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 15:48:53,358 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("taskreminder")
+2025-05-11 15:48:53,358 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 15:48:53,358 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-11 15:50:21,690 - taskserver.app - INFO - Shutting down the application...
+2025-05-11 15:50:39,501 - taskserver.app - INFO - Starting up the application...
+2025-05-11 15:50:39,501 - taskserver.database - INFO - init database
+2025-05-11 15:50:39,502 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 15:50:39,502 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("taskreminder")
+2025-05-11 15:50:39,502 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 15:50:39,503 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-11 15:50:39,904 - taskserver.app - INFO - Shutting down the application...
+2025-05-11 15:50:40,518 - taskserver.app - INFO - Starting up the application...
+2025-05-11 15:50:40,519 - taskserver.database - INFO - init database
+2025-05-11 15:50:40,519 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 15:50:40,519 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("taskreminder")
+2025-05-11 15:50:40,519 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 15:50:40,520 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-11 15:50:41,524 - taskserver.app - INFO - Shutting down the application...
+2025-05-11 15:50:42,145 - taskserver.app - INFO - Starting up the application...
+2025-05-11 15:50:42,145 - taskserver.database - INFO - init database
+2025-05-11 15:50:42,146 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 15:50:42,146 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("taskreminder")
+2025-05-11 15:50:42,146 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 15:50:42,147 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-11 15:50:43,253 - taskserver.app - INFO - Shutting down the application...
+2025-05-11 15:50:43,993 - taskserver.app - INFO - Starting up the application...
+2025-05-11 15:50:43,994 - taskserver.database - INFO - init database
+2025-05-11 15:50:43,994 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 15:50:43,995 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("taskreminder")
+2025-05-11 15:50:43,995 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 15:50:43,996 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-11 15:50:45,101 - taskserver.app - INFO - Shutting down the application...
+2025-05-11 15:50:45,803 - taskserver.app - INFO - Starting up the application...
+2025-05-11 15:50:45,803 - taskserver.database - INFO - init database
+2025-05-11 15:50:45,804 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 15:50:45,804 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("taskreminder")
+2025-05-11 15:50:45,805 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 15:50:45,805 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-11 15:51:29,628 - taskserver.app - INFO - Shutting down the application...
+2025-05-11 15:51:30,355 - taskserver.app - INFO - Starting up the application...
+2025-05-11 15:51:30,355 - taskserver.database - INFO - init database
+2025-05-11 15:51:30,356 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 15:51:30,357 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("taskreminder")
+2025-05-11 15:51:30,357 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 15:51:30,358 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-11 15:54:30,939 - taskserver.app - INFO - Shutting down the application...
+2025-05-11 15:54:31,562 - taskserver.app - INFO - Starting up the application...
+2025-05-11 15:54:31,562 - taskserver.database - INFO - init database
+2025-05-11 15:54:31,563 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 15:54:31,563 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("taskreminder")
+2025-05-11 15:54:31,563 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 15:54:31,564 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-11 15:54:37,892 - taskserver.app - INFO - Shutting down the application...
+2025-05-11 15:54:38,597 - taskserver.app - INFO - Starting up the application...
+2025-05-11 15:54:38,598 - taskserver.database - INFO - init database
+2025-05-11 15:54:38,598 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 15:54:38,598 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("taskreminder")
+2025-05-11 15:54:38,599 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 15:54:38,599 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-11 15:54:42,215 - taskserver.app - INFO - Shutting down the application...
+2025-05-11 15:54:42,866 - taskserver.app - INFO - Starting up the application...
+2025-05-11 15:54:42,866 - taskserver.database - INFO - init database
+2025-05-11 15:54:42,866 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 15:54:42,867 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("taskreminder")
+2025-05-11 15:54:42,867 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 15:54:42,868 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-11 15:54:43,770 - taskserver.app - INFO - Shutting down the application...
+2025-05-11 15:54:44,391 - taskserver.app - INFO - Starting up the application...
+2025-05-11 15:54:44,392 - taskserver.database - INFO - init database
+2025-05-11 15:54:44,392 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 15:54:44,393 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("taskreminder")
+2025-05-11 15:54:44,393 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 15:54:44,394 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-11 15:54:59,456 - taskserver.app - INFO - Shutting down the application...
+2025-05-11 15:55:00,149 - taskserver.app - INFO - Starting up the application...
+2025-05-11 15:55:00,149 - taskserver.database - INFO - init database
+2025-05-11 15:55:00,149 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 15:55:00,150 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("taskreminder")
+2025-05-11 15:55:00,150 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 15:55:00,151 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-11 15:55:30,905 - taskserver.app - INFO - Shutting down the application...
+2025-05-11 15:55:31,791 - taskserver.app - INFO - Starting up the application...
+2025-05-11 15:55:31,791 - taskserver.database - INFO - init database
+2025-05-11 15:55:31,792 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 15:55:31,792 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("taskreminder")
+2025-05-11 15:55:31,792 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 15:55:31,793 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-11 15:55:32,306 - taskserver.routes - INFO - save run_time=False assignee='string' content='string' created_by='string' modified_by='string' reminder_type=<ReminderType.email: 'email'>
+2025-05-11 15:55:43,050 - taskserver.app - INFO - Shutting down the application...
+2025-05-11 15:55:43,712 - taskserver.app - INFO - Starting up the application...
+2025-05-11 15:55:43,712 - taskserver.database - INFO - init database
+2025-05-11 15:55:43,712 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 15:55:43,713 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("taskreminder")
+2025-05-11 15:55:43,713 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 15:55:43,714 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-11 15:55:47,462 - taskserver.routes - INFO - save run_time=False assignee='string' content='string' created_by='string' modified_by='string' reminder_type=<ReminderType.email: 'email'>
+2025-05-11 15:56:44,357 - taskserver.routes - INFO - save run_time=False assignee='string' content='string' created_by='string' modified_by='string' reminder_type=<ReminderType.email: 'email'>
+2025-05-11 15:56:50,795 - taskserver.routes - INFO - save run_time=False assignee='string' content='string' created_by='string' modified_by='string' reminder_type=<ReminderType.email: 'email'>
+2025-05-11 15:57:09,749 - taskserver.app - INFO - Shutting down the application...
+2025-05-11 15:57:10,341 - taskserver.app - INFO - Starting up the application...
+2025-05-11 15:57:10,341 - taskserver.database - INFO - init database
+2025-05-11 15:57:10,342 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 15:57:10,342 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("taskreminder")
+2025-05-11 15:57:10,342 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 15:57:10,343 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-11 15:57:12,028 - taskserver.routes - INFO - save run_time=False assignee='string' content='string' created_by='string' modified_by='string' reminder_type=<ReminderType.email: 'email'>
+2025-05-11 15:57:22,498 - taskserver.app - INFO - Shutting down the application...
+2025-05-11 15:57:23,460 - taskserver.app - INFO - Starting up the application...
+2025-05-11 15:57:23,461 - taskserver.database - INFO - init database
+2025-05-11 15:57:23,462 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 15:57:23,462 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("taskreminder")
+2025-05-11 15:57:23,462 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 15:57:23,463 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-11 15:57:26,336 - taskserver.routes - INFO - save run_time=False assignee='string' content='string' created_by='string' modified_by='string' reminder_type=<ReminderType.email: 'email'>
+2025-05-11 15:57:39,336 - taskserver.app - INFO - Shutting down the application...
+2025-05-11 15:57:40,043 - taskserver.app - INFO - Starting up the application...
+2025-05-11 15:57:40,043 - taskserver.database - INFO - init database
+2025-05-11 15:57:40,044 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 15:57:40,044 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("taskreminder")
+2025-05-11 15:57:40,044 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 15:57:40,045 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-11 15:57:43,718 - taskserver.routes - INFO - save run_time=False assignee='string' content='string' created_by='string' modified_by='string' reminder_type=<ReminderType.email: 'email'>
+2025-05-11 15:57:59,931 - taskserver.app - INFO - Shutting down the application...
+2025-05-11 15:58:00,650 - taskserver.app - INFO - Starting up the application...
+2025-05-11 15:58:00,650 - taskserver.database - INFO - init database
+2025-05-11 15:58:00,651 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 15:58:00,651 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("taskreminder")
+2025-05-11 15:58:00,651 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 15:58:00,652 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-11 15:58:03,484 - taskserver.routes - INFO - save run_time=False assignee='string' content='string' created_by='string' modified_by='string' reminder_type=<ReminderType.email: 'email'>
+2025-05-11 15:58:16,334 - taskserver.app - INFO - Shutting down the application...
+2025-05-11 15:58:17,145 - taskserver.app - INFO - Starting up the application...
+2025-05-11 15:58:17,145 - taskserver.database - INFO - init database
+2025-05-11 15:58:17,146 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 15:58:17,147 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("taskreminder")
+2025-05-11 15:58:17,147 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 15:58:17,148 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-11 15:58:18,126 - taskserver.routes - INFO - save run_time=datetime.datetime(2025, 5, 11, 7, 56, 48, 377000, tzinfo=TzInfo(UTC)) assignee='string' content='string' created_by='string' modified_by='string' reminder_type=<ReminderType.email: 'email'>
+2025-05-11 15:58:18,132 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 15:58:18,136 - sqlalchemy.engine.Engine - INFO - INSERT INTO taskreminder (run_time, assignee, content, created_by, modified_by, reminder_type, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2025-05-11 15:58:18,136 - sqlalchemy.engine.Engine - INFO - [generated in 0.00056s] ('2025-05-11 07:56:48.377000', 'string', 'string', 'string', 'string', 'email', '2025-05-11 07:58:18.131276', '2025-05-11 07:58:18.131288')
+2025-05-11 15:58:18,137 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-11 15:58:18,155 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 15:58:18,158 - sqlalchemy.engine.Engine - INFO - SELECT taskreminder.run_time, taskreminder.assignee, taskreminder.content, taskreminder.created_by, taskreminder.modified_by, taskreminder.reminder_type, taskreminder.id, taskreminder.created_at, taskreminder.updated_at 
+FROM taskreminder 
+WHERE taskreminder.id = ?
+2025-05-11 15:58:18,159 - sqlalchemy.engine.Engine - INFO - [generated in 0.00069s] (1,)
+2025-05-11 15:58:18,161 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-05-11 15:58:40,065 - taskserver.app - INFO - Shutting down the application...
+2025-05-11 15:58:40,697 - taskserver.app - INFO - Starting up the application...
+2025-05-11 15:58:40,697 - taskserver.database - INFO - init database
+2025-05-11 15:58:40,698 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 15:58:40,698 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("taskreminder")
+2025-05-11 15:58:40,699 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 15:58:40,700 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-11 15:58:45,222 - taskserver.app - INFO - Shutting down the application...
+2025-05-11 15:58:45,985 - taskserver.app - INFO - Starting up the application...
+2025-05-11 15:58:45,985 - taskserver.database - INFO - init database
+2025-05-11 15:58:45,986 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 15:58:45,987 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("taskreminder")
+2025-05-11 15:58:45,987 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 15:58:45,988 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-11 15:58:49,963 - taskserver.routes - INFO - save run_time=False assignee='string' content='string' created_by='string' modified_by='string' reminder_type=<ReminderType.email: 'email'>
+2025-05-11 15:59:10,386 - taskserver.routes - INFO - save run_time=False assignee='string' content='string' created_by='string' modified_by='string' reminder_type=<ReminderType.email: 'email'>
+2025-05-11 15:59:22,987 - taskserver.app - INFO - Shutting down the application...
+2025-05-11 15:59:23,818 - taskserver.app - INFO - Starting up the application...
+2025-05-11 15:59:23,818 - taskserver.database - INFO - init database
+2025-05-11 15:59:23,818 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 15:59:23,819 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("taskreminder")
+2025-05-11 15:59:23,819 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 15:59:23,820 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-11 15:59:24,826 - taskserver.app - INFO - Shutting down the application...
+2025-05-11 15:59:25,497 - taskserver.app - INFO - Starting up the application...
+2025-05-11 15:59:25,497 - taskserver.database - INFO - init database
+2025-05-11 15:59:25,498 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 15:59:25,499 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("taskreminder")
+2025-05-11 15:59:25,499 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 15:59:25,500 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-11 15:59:28,187 - taskserver.routes - INFO - save run_time=False assignee='string' content='string' created_by='string' modified_by='string' reminder_type=<ReminderType.email: 'email'>
+2025-05-11 15:59:47,105 - taskserver.app - INFO - Shutting down the application...
+2025-05-11 15:59:47,838 - taskserver.app - INFO - Starting up the application...
+2025-05-11 15:59:47,838 - taskserver.database - INFO - init database
+2025-05-11 15:59:47,839 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 15:59:47,840 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("taskreminder")
+2025-05-11 15:59:47,840 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 15:59:47,841 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-11 16:00:01,609 - taskserver.app - INFO - Shutting down the application...
+2025-05-11 16:00:02,374 - taskserver.app - INFO - Starting up the application...
+2025-05-11 16:00:02,374 - taskserver.database - INFO - init database
+2025-05-11 16:00:02,375 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 16:00:02,375 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("taskreminder")
+2025-05-11 16:00:02,376 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 16:00:02,376 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-11 16:00:03,803 - taskserver.routes - INFO - save run_time=False assignee='string' content='string' created_by='string' modified_by='string' reminder_type=<ReminderType.email: 'email'>
+2025-05-11 16:00:18,656 - taskserver.app - INFO - Shutting down the application...
+2025-05-11 16:00:19,449 - taskserver.app - INFO - Starting up the application...
+2025-05-11 16:00:19,449 - taskserver.database - INFO - init database
+2025-05-11 16:00:19,449 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 16:00:19,450 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("taskreminder")
+2025-05-11 16:00:19,450 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 16:00:19,450 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-11 16:00:23,726 - taskserver.routes - INFO - save run_time=True assignee='string' content='string' created_by='string' modified_by='string' reminder_type=<ReminderType.email: 'email'>
+2025-05-11 16:00:36,931 - taskserver.app - INFO - Shutting down the application...
+2025-05-11 16:00:37,555 - taskserver.app - INFO - Starting up the application...
+2025-05-11 16:00:37,556 - taskserver.database - INFO - init database
+2025-05-11 16:00:37,556 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 16:00:37,557 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("taskreminder")
+2025-05-11 16:00:37,557 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 16:00:37,559 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-11 16:00:39,169 - taskserver.routes - INFO - save run_time=True assignee='string' content='string' created_by='string' modified_by='string' reminder_type=<ReminderType.email: 'email'>
+2025-05-11 16:00:48,111 - taskserver.app - INFO - Shutting down the application...
+2025-05-11 16:00:48,875 - taskserver.app - INFO - Starting up the application...
+2025-05-11 16:00:48,875 - taskserver.database - INFO - init database
+2025-05-11 16:00:48,876 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 16:00:48,876 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("taskreminder")
+2025-05-11 16:00:48,876 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 16:00:48,877 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-11 16:00:50,215 - taskserver.routes - INFO - save run_time=True assignee='string' content='string' created_by='string' modified_by='string' reminder_type=<ReminderType.email: 'email'>
+2025-05-11 16:01:01,536 - taskserver.app - INFO - Shutting down the application...
+2025-05-11 16:01:02,225 - taskserver.app - INFO - Starting up the application...
+2025-05-11 16:01:02,225 - taskserver.database - INFO - init database
+2025-05-11 16:01:02,226 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 16:01:02,226 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("taskreminder")
+2025-05-11 16:01:02,226 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 16:01:02,227 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-11 16:01:03,614 - taskserver.routes - INFO - save run_time=datetime.datetime(2025, 5, 11, 7, 56, 48, 377000, tzinfo=TzInfo(UTC)) assignee='string' content='string' created_by='string' modified_by='string' reminder_type=<ReminderType.email: 'email'>
+2025-05-11 16:01:03,622 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 16:01:03,624 - sqlalchemy.engine.Engine - INFO - INSERT INTO taskreminder (run_time, assignee, content, created_by, modified_by, reminder_type, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2025-05-11 16:01:03,625 - sqlalchemy.engine.Engine - INFO - [generated in 0.00055s] ('2025-05-11 07:56:48.377000', 'string', 'string', 'string', 'string', 'email', '2025-05-11 08:01:03.621185', '2025-05-11 08:01:03.621197')
+2025-05-11 16:01:03,626 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-11 16:01:03,645 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 16:01:03,649 - sqlalchemy.engine.Engine - INFO - SELECT taskreminder.run_time, taskreminder.assignee, taskreminder.content, taskreminder.created_by, taskreminder.modified_by, taskreminder.reminder_type, taskreminder.id, taskreminder.created_at, taskreminder.updated_at 
+FROM taskreminder 
+WHERE taskreminder.id = ?
+2025-05-11 16:01:03,650 - sqlalchemy.engine.Engine - INFO - [generated in 0.00059s] (2,)
+2025-05-11 16:01:03,651 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-05-11 16:01:18,508 - taskserver.routes - INFO - save run_time=datetime.datetime(2025, 1, 11, 7, 56, 48, 377000, tzinfo=TzInfo(UTC)) assignee='string' content='string' created_by='string' modified_by='string' reminder_type=<ReminderType.email: 'email'>
+2025-05-11 16:01:18,509 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 16:01:18,509 - sqlalchemy.engine.Engine - INFO - INSERT INTO taskreminder (run_time, assignee, content, created_by, modified_by, reminder_type, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2025-05-11 16:01:18,510 - sqlalchemy.engine.Engine - INFO - [cached since 14.89s ago] ('2025-01-11 07:56:48.377000', 'string', 'string', 'string', 'string', 'email', '2025-05-11 08:01:18.508888', '2025-05-11 08:01:18.508895')
+2025-05-11 16:01:18,511 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-11 16:01:18,534 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 16:01:18,534 - sqlalchemy.engine.Engine - INFO - SELECT taskreminder.run_time, taskreminder.assignee, taskreminder.content, taskreminder.created_by, taskreminder.modified_by, taskreminder.reminder_type, taskreminder.id, taskreminder.created_at, taskreminder.updated_at 
+FROM taskreminder 
+WHERE taskreminder.id = ?
+2025-05-11 16:01:18,535 - sqlalchemy.engine.Engine - INFO - [cached since 14.89s ago] (3,)
+2025-05-11 16:01:18,536 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-05-11 16:01:30,908 - taskserver.routes - INFO - save run_time=datetime.datetime(2021, 1, 11, 7, 56, 48, 377000, tzinfo=TzInfo(UTC)) assignee='string' content='string' created_by='string' modified_by='string' reminder_type=<ReminderType.email: 'email'>
+2025-05-11 16:01:30,910 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 16:01:30,912 - sqlalchemy.engine.Engine - INFO - INSERT INTO taskreminder (run_time, assignee, content, created_by, modified_by, reminder_type, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2025-05-11 16:01:30,912 - sqlalchemy.engine.Engine - INFO - [cached since 27.29s ago] ('2021-01-11 07:56:48.377000', 'string', 'string', 'string', 'string', 'email', '2025-05-11 08:01:30.909292', '2025-05-11 08:01:30.909304')
+2025-05-11 16:01:30,914 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-11 16:01:30,936 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 16:01:30,937 - sqlalchemy.engine.Engine - INFO - SELECT taskreminder.run_time, taskreminder.assignee, taskreminder.content, taskreminder.created_by, taskreminder.modified_by, taskreminder.reminder_type, taskreminder.id, taskreminder.created_at, taskreminder.updated_at 
+FROM taskreminder 
+WHERE taskreminder.id = ?
+2025-05-11 16:01:30,937 - sqlalchemy.engine.Engine - INFO - [cached since 27.29s ago] (4,)
+2025-05-11 16:01:30,938 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-05-11 16:02:53,174 - taskserver.app - INFO - Shutting down the application...
+2025-05-11 16:02:53,819 - taskserver.app - INFO - Starting up the application...
+2025-05-11 16:02:53,819 - taskserver.database - INFO - init database
+2025-05-11 16:02:53,820 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 16:02:53,820 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("taskreminder")
+2025-05-11 16:02:53,821 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 16:02:53,822 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-11 16:04:01,586 - taskserver.routes - INFO - save scheduled_at=datetime.datetime(2031, 1, 11, 7, 56, 48, 377000, tzinfo=TzInfo(UTC)) assignee='string' content='string' created_by='string' modified_by='string' reminder_type=<ReminderType.email: 'email'>
+2025-05-11 16:04:01,589 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 16:04:01,592 - sqlalchemy.engine.Engine - INFO - INSERT INTO taskreminder (scheduled_at, assignee, content, created_by, modified_by, reminder_type, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2025-05-11 16:04:01,592 - sqlalchemy.engine.Engine - INFO - [generated in 0.00059s] ('2031-01-11 07:56:48.377000', 'string', 'string', 'string', 'string', 'email', '2025-05-11 08:04:01.588544', '2025-05-11 08:04:01.588553')
+2025-05-11 16:04:01,593 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-05-11 16:04:13,047 - taskserver.app - INFO - Shutting down the application...
+2025-05-11 16:04:13,679 - taskserver.app - INFO - Starting up the application...
+2025-05-11 16:04:13,679 - taskserver.database - INFO - init database
+2025-05-11 16:04:13,680 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 16:04:13,680 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("taskreminder")
+2025-05-11 16:04:13,680 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 16:04:13,681 - sqlalchemy.engine.Engine - INFO - PRAGMA temp.table_info("taskreminder")
+2025-05-11 16:04:13,681 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 16:04:13,682 - sqlalchemy.engine.Engine - INFO - 
+CREATE TABLE taskreminder (
+	scheduled_at DATETIME NOT NULL, 
+	assignee VARCHAR NOT NULL, 
+	content VARCHAR(50) NOT NULL, 
+	created_by VARCHAR NOT NULL, 
+	modified_by VARCHAR NOT NULL, 
+	reminder_type VARCHAR(5) NOT NULL, 
+	id INTEGER NOT NULL, 
+	created_at DATETIME NOT NULL, 
+	updated_at DATETIME NOT NULL, 
+	PRIMARY KEY (id)
+)
+
+
+2025-05-11 16:04:13,683 - sqlalchemy.engine.Engine - INFO - [no key 0.00026s] ()
+2025-05-11 16:04:13,701 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-11 16:04:16,174 - taskserver.routes - INFO - save scheduled_at=datetime.datetime(2031, 1, 11, 7, 56, 48, 377000, tzinfo=TzInfo(UTC)) assignee='string' content='string' created_by='string' modified_by='string' reminder_type=<ReminderType.email: 'email'>
+2025-05-11 16:04:16,177 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 16:04:16,180 - sqlalchemy.engine.Engine - INFO - INSERT INTO taskreminder (scheduled_at, assignee, content, created_by, modified_by, reminder_type, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2025-05-11 16:04:16,180 - sqlalchemy.engine.Engine - INFO - [generated in 0.00048s] ('2031-01-11 07:56:48.377000', 'string', 'string', 'string', 'string', 'email', '2025-05-11 08:04:16.177049', '2025-05-11 08:04:16.177059')
+2025-05-11 16:04:16,181 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-11 16:04:16,199 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 16:04:16,203 - sqlalchemy.engine.Engine - INFO - SELECT taskreminder.scheduled_at, taskreminder.assignee, taskreminder.content, taskreminder.created_by, taskreminder.modified_by, taskreminder.reminder_type, taskreminder.id, taskreminder.created_at, taskreminder.updated_at 
+FROM taskreminder 
+WHERE taskreminder.id = ?
+2025-05-11 16:04:16,203 - sqlalchemy.engine.Engine - INFO - [generated in 0.00043s] (1,)
+2025-05-11 16:04:16,204 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-05-11 16:04:31,593 - taskserver.app - INFO - Shutting down the application...
+2025-05-11 16:04:32,270 - taskserver.app - INFO - Starting up the application...
+2025-05-11 16:04:32,270 - taskserver.database - INFO - init database
+2025-05-11 16:04:32,271 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 16:04:32,271 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("taskreminder")
+2025-05-11 16:04:32,271 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 16:04:32,272 - sqlalchemy.engine.Engine - INFO - COMMIT
