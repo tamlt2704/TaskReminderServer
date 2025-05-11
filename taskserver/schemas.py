@@ -1,6 +1,7 @@
 from pydantic import BaseModel, Field, field_validator, EmailStr
 from datetime import datetime, date, timezone
 from enum import Enum
+from typing import Optional
 
 class ReminderType(str, Enum):
     email = "email"
@@ -21,10 +22,10 @@ class TaskReminderBase(BaseModel):
         return scheduled_at
 
 class TaskUpdate(BaseModel):
-    scheduled_at: datetime | None = None
-    assignee: str | None = None
-    content: str | None
-    reminder_type: ReminderType = Field(default=ReminderType.email)
+    scheduled_at: Optional[datetime] = None
+    assignee: Optional[str] = None
+    content: Optional[str] = None
+    reminder_type: Optional[ReminderType] = None
 
 class TaskReminderCreate(BaseModel):
     scheduled_at: datetime

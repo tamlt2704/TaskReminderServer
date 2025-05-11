@@ -20,8 +20,8 @@ def create_error(error_msg: str):
 
 @task_router.post("/")
 def create_tasks(task_base: TaskReminderCreate, session = Depends(get_session), user: UserRead = Depends(get_current_active_user)):
-    user = find_user_by_username(session, task_base.assignee)
-    if not user:
+    assignee = find_user_by_username(session, task_base.assignee)
+    if not assignee:
         raise create_error(f"User name {task_base.assignee} does not exist")
     
     task_in_db = create_task_reminder(session, task_base, user)
