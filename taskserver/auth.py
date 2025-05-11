@@ -1,7 +1,6 @@
 from typing import Annotated
 from fastapi import APIRouter, Depends, HTTPException, status
 from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
-from passlib.context import CryptContext
 from sqlmodel import Session
 from datetime import datetime, timedelta, timezone
 import jwt
@@ -16,7 +15,6 @@ from .crud import find_user_by_email
 auth_router = APIRouter()
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
 
-####Authentication
 # openssl rand -hex 32
 # this should be an env variable, not here. TODO
 SECRET_KEY = "ff0f1c9df2a6c1dc603c46b7a6365b0b2e860559437520ae423d408ee74ee60b"
@@ -36,7 +34,6 @@ async def login_for_access_token(
     form_data: Annotated[OAuth2PasswordRequestForm, Depends()],
     session: Session = Depends(get_session)
     ) -> Token:
-    print('==================', form_data.username, form_data.password)
     user = authenticate_user(session, form_data.username, form_data.password)
     if not user:
         raise HTTPException(
@@ -74,12 +71,12 @@ async def get_current_user(
 
     try:
         payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
-        user_name = payload.get("sub")
-        if user_name is None:
+        user_email = payload.get("sub")
+        if user_email is None:
             raise credentials_exception
     except jwt.InvalidTokenError:
         raise create_access_token
-    user = find_user_by_email(user_name)
+    user = find_user_by_email(user_email)
     if user is None:
         raise credentials_exception
     return user

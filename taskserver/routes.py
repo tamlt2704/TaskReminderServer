@@ -1,12 +1,10 @@
 from datetime import timedelta
 from typing import Annotated
-from fastapi import APIRouter, Depends, HTTPException, status
+from fastapi import APIRouter, Depends, HTTPException
 import logging
 
-from fastapi.security import OAuth2PasswordRequestForm
 from sqlmodel import Session, select
-from taskserver.auth import ACCESS_TOKEN_EXPIRE_MINUTES, create_access_token, verify_password
-from taskserver.schemas import TaskReminderBase, Token, UserCreate, UserRead
+from taskserver.schemas import TaskReminderBase, UserCreate, UserRead
 from .database import get_session
 from .crud import create_task_reminder, delete_task_by_id, save_user, find_user_by_email_pattern, find_user_by_email, get_task_by_id
 from .models import User
