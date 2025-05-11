@@ -36,7 +36,7 @@ class TaskReminderRead(TaskReminderCreate):
 
 
 class UserBase(BaseModel):
-    name: str
+    user_name: str
     email: EmailStr
 
 class UserRead(UserBase):
@@ -44,6 +44,12 @@ class UserRead(UserBase):
 
 class UserCreate(UserBase):
     password: str = Field(min_length=8)
+
+    @field_validator("user_name")
+    def validate_user_name(user_name):
+        if not user_name:
+            raise ValueError("User name can not be empty")
+        return user_name
 
 class Token(BaseModel):
     access_token: str

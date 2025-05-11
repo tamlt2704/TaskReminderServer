@@ -16,7 +16,7 @@ class User(BaseEntity, UserBase, table=True):
 
 class TaskReminder(BaseEntity, TaskReminderBase, table=True):
     def set_created_by(self, user: User):
-        self.created_by = user.email
+        self.created_by = user.user_name
 
     def set_modified_by(self, user: User):
-        self.modified_by = user.email
+        self.modified_by = user.user_name
