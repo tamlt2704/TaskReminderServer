@@ -8,15 +8,11 @@ from .conftest import override_get_session
 from taskserver.auth import get_current_active_user
 client = TestClient(app)
 
-# Dependency override
-
 def override_active_user():
     yield None#User(user_name="tom", email="tom@example.com")
 
 app.dependency_overrides[get_session] = override_get_session
 app.dependency_overrides[get_current_active_user] = override_active_user
-
-
 
 def ensure_user_exist():
     client.post('api/v1/users', json={
@@ -46,7 +42,7 @@ def test_creat_task_should_work():
     response = client.post('/api/v1/tasks', json={
         "scheduled_at": datetime.now(timezone.utc).isoformat(),
         "assignee": "tom",
-        "content": "string",        
+        "content": "string",
         "reminder_type": "email"
     })
     assert response.status_code == 200
@@ -65,3 +61,14 @@ def test_asssignee_should_exist():
     })
     assert response.status_code == 400
     assert response.json() == {'detail': 'User name thisuserdoesnotexist does not exist'}
+
+def test_conten_is_required():
+    ensure_user_exist()
+
+    response = client.post('/api/v1/tasks', json={
+        "scheduled_at": datetime.now(timezone.utc).isoformat(),
+        "assignee": "thisuserdoesnotexist",
+        "content": "",        
+        "reminder_type": "email"
+    })
+    assert response.status_code == 422
