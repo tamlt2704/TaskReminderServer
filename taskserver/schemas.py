@@ -20,14 +20,17 @@ class TaskReminderBase(BaseModel):
             raise ValueError("Scheduled should not be a past date")
         return scheduled_at
 
-class TaskUpdate(TaskReminderBase):
+class TaskUpdate(BaseModel):
     scheduled_at: datetime | None = None
     assignee: str | None = None
     content: str | None
-    reminder_type: ReminderType | None
+    reminder_type: ReminderType = Field(default=ReminderType.email)
 
-class TaskReminderCreate(TaskReminderBase):
-    pass
+class TaskReminderCreate(BaseModel):
+    scheduled_at: datetime
+    assignee: str
+    content: str = Field(min_length=5, max_length=50)
+    reminder_type: ReminderType = Field(default=ReminderType.email)
 
 class TaskReminderRead(TaskReminderCreate):
     id: int
