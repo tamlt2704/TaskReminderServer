@@ -6,12 +6,10 @@ from taskserver.models import TaskReminder, User
 
 
 def create_task_reminder(session: Session, data: TaskReminderCreate):
-    reminder = TaskReminder.model_validate(data)
+    reminder = TaskReminder.model_validate(data)        
     session.add(reminder)
     session.commit()
     session.refresh(reminder)
-    # user_pydantic = UserCreate(**user_db.dict(exclude={"id"}))  # Convert to Pydantic format
-    # print(user_pydantic)
     return reminder
 
 def save_user(session: Session, user_data: UserBase):
@@ -24,3 +22,6 @@ def save_user(session: Session, user_data: UserBase):
 def find_user_by_email_pattern(session: Session, email_pattern: str):
     users = session.exec(select(User).where(User.email.like(f"%{email_pattern}%"))).all()
     return users if users else {"error": "No users found"}
+
+def find_user_by_email(session, email):
+    return session.exec(select(User).where(User.email == email)).first()
