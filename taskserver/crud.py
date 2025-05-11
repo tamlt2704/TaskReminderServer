@@ -1,5 +1,5 @@
 
-from sqlmodel import Session, select
+from sqlmodel import Session, delete, select
 
 from taskserver.schemas import TaskReminderCreate, UserBase
 from taskserver.models import TaskReminder, User
@@ -25,3 +25,16 @@ def find_user_by_email_pattern(session: Session, email_pattern: str):
 
 def find_user_by_email(session, email):
     return session.exec(select(User).where(User.email == email)).first()
+
+def get_task_by_id(session: Session, task_id: int):
+    task = session.exec(select(TaskReminder).where(TaskReminder.id == task_id)).first()
+    return task if task else None
+
+def delete_task_by_id(session: Session, task_id: int):
+    task = session.exec(select(TaskReminder).where(TaskReminder.id == task_id)).first()
+    if not task:
+        return {"error": "Task not found"}
+
+    session.exec(delete(TaskReminder).where(TaskReminder.id == task_id))
+    session.commit()
+    return {"message": "Task deleted successfully"}

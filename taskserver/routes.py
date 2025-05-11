@@ -4,7 +4,7 @@ import logging
 from sqlmodel import Session, select
 from taskserver.schemas import TaskReminderBase, UserBase, UserRead
 from .database import get_session
-from .crud import create_task_reminder, save_user, find_user_by_email_pattern, find_user_by_email
+from .crud import create_task_reminder, delete_task_by_id, save_user, find_user_by_email_pattern, find_user_by_email, get_task_by_id
 from .models import User
 
 logger = logging.getLogger(__name__)
@@ -23,6 +23,18 @@ def create_tasks(task_base: TaskReminderBase, session = Depends(get_session)):
     
     task_in_db = create_task_reminder(session, task_base)
     return task_in_db
+
+@task_router.get("/{task_id}")
+def fetch_task(task_id: int, session: Session = Depends(get_session)):
+    task_in_db = get_task_by_id(session, task_id)
+    if not task_in_db:
+        raise create_error(f"Task with id: {task_id} does not exist")
+    
+    return task_in_db
+
+@task_router.delete("/{task_id}")
+def remove_task(task_id: int, session: Session = Depends(get_session)):
+    return delete_task_by_id(session, task_id)
 
 @task_router.get("/")
 def get_tasks():
