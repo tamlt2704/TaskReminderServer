@@ -1611,3 +1611,201 @@ WHERE user.email LIKE ?
 2025-05-11 16:38:41,594 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("user")
 2025-05-11 16:38:41,594 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
 2025-05-11 16:38:41,595 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-12 03:35:57,692 - taskserver.app - INFO - Starting up the application...
+2025-05-12 03:35:57,692 - taskserver.database - INFO - init database
+2025-05-12 03:35:57,694 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-12 03:35:57,694 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("user")
+2025-05-12 03:35:57,694 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-12 03:35:57,695 - sqlalchemy.engine.Engine - INFO - PRAGMA temp.table_info("user")
+2025-05-12 03:35:57,695 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-12 03:35:57,696 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("taskreminder")
+2025-05-12 03:35:57,696 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-12 03:35:57,697 - sqlalchemy.engine.Engine - INFO - 
+CREATE TABLE user (
+	user_name VARCHAR NOT NULL, 
+	email VARCHAR NOT NULL, 
+	id INTEGER NOT NULL, 
+	created_at DATETIME NOT NULL, 
+	updated_at DATETIME NOT NULL, 
+	hashed_password VARCHAR, 
+	disabled BOOLEAN, 
+	PRIMARY KEY (id)
+)
+
+
+2025-05-12 03:35:57,698 - sqlalchemy.engine.Engine - INFO - [no key 0.00026s] ()
+2025-05-12 03:35:57,721 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-12 03:36:28,518 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-12 03:36:28,522 - sqlalchemy.engine.Engine - INFO - SELECT user.user_name, user.email, user.id, user.created_at, user.updated_at, user.hashed_password, user.disabled 
+FROM user 
+WHERE user.user_name = ?
+2025-05-12 03:36:28,523 - sqlalchemy.engine.Engine - INFO - [generated in 0.00032s] ('tam',)
+2025-05-12 03:36:28,524 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-05-12 03:36:51,765 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-12 03:36:51,766 - sqlalchemy.engine.Engine - INFO - SELECT user.user_name, user.email, user.id, user.created_at, user.updated_at, user.hashed_password, user.disabled 
+FROM user 
+WHERE user.email = ?
+2025-05-12 03:36:51,766 - sqlalchemy.engine.Engine - INFO - [generated in 0.00033s] ('user@example.com',)
+2025-05-12 03:36:51,771 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "/home/debian/.cache/pypoetry/virtualenvs/taskreminderserver-2lQxdBut-py3.10/lib/python3.10/site-packages/passlib/handlers/bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-05-12 03:36:52,037 - sqlalchemy.engine.Engine - INFO - INSERT INTO user (user_name, email, created_at, updated_at, hashed_password, disabled) VALUES (?, ?, ?, ?, ?, ?)
+2025-05-12 03:36:52,038 - sqlalchemy.engine.Engine - INFO - [generated in 0.00035s] ('tam', 'user@example.com', '2025-05-11 19:36:51.768060', '2025-05-11 19:36:51.768069', '$2b$12$Fw.EXkcQD7K8dvseqS9Km.h9B7ywnf8H1UjEOXM7Jc0bDB6PzlX5a', 0)
+2025-05-12 03:36:52,038 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-12 03:36:52,058 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-12 03:36:52,061 - sqlalchemy.engine.Engine - INFO - SELECT user.user_name, user.email, user.id, user.created_at, user.updated_at, user.hashed_password, user.disabled 
+FROM user 
+WHERE user.id = ?
+2025-05-12 03:36:52,061 - sqlalchemy.engine.Engine - INFO - [generated in 0.00037s] (1,)
+2025-05-12 03:36:52,063 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-05-12 03:37:23,311 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-12 03:37:23,311 - sqlalchemy.engine.Engine - INFO - SELECT user.user_name, user.email, user.id, user.created_at, user.updated_at, user.hashed_password, user.disabled 
+FROM user 
+WHERE user.user_name = ?
+2025-05-12 03:37:23,311 - sqlalchemy.engine.Engine - INFO - [cached since 54.79s ago] ('tam',)
+2025-05-12 03:37:23,611 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-05-12 03:37:26,579 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-12 03:37:26,580 - sqlalchemy.engine.Engine - INFO - SELECT user.user_name, user.email, user.id, user.created_at, user.updated_at, user.hashed_password, user.disabled 
+FROM user 
+WHERE user.user_name = ?
+2025-05-12 03:37:26,580 - sqlalchemy.engine.Engine - INFO - [cached since 58.06s ago] ('tam',)
+2025-05-12 03:37:26,585 - sqlalchemy.engine.Engine - INFO - SELECT user.user_name, user.email, user.id, user.created_at, user.updated_at, user.hashed_password, user.disabled 
+FROM user 
+WHERE user.user_name = ?
+2025-05-12 03:37:26,586 - sqlalchemy.engine.Engine - INFO - [cached since 58.07s ago] ('tam',)
+2025-05-12 03:37:26,589 - sqlalchemy.engine.Engine - INFO - INSERT INTO taskreminder (scheduled_at, assignee, content, created_by, modified_by, reminder_type, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2025-05-12 03:37:26,589 - sqlalchemy.engine.Engine - INFO - [generated in 0.00056s] ('2025-05-11 19:34:46.084000', 'tam', 'compeleted readme file with instruction', 'tam', None, 'email', '2025-05-11 19:37:26.587001', '2025-05-11 19:37:26.587008')
+2025-05-12 03:37:26,590 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-05-12 03:39:04,511 - taskserver.app - INFO - Shutting down the application...
+2025-05-12 03:39:10,688 - taskserver.app - INFO - Starting up the application...
+2025-05-12 03:39:10,688 - taskserver.database - INFO - init database
+2025-05-12 03:39:10,689 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-12 03:39:10,690 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("user")
+2025-05-12 03:39:10,690 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-12 03:39:10,691 - sqlalchemy.engine.Engine - INFO - PRAGMA temp.table_info("user")
+2025-05-12 03:39:10,691 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-12 03:39:10,692 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("taskreminder")
+2025-05-12 03:39:10,692 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-12 03:39:10,692 - sqlalchemy.engine.Engine - INFO - PRAGMA temp.table_info("taskreminder")
+2025-05-12 03:39:10,692 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-12 03:39:10,694 - sqlalchemy.engine.Engine - INFO - 
+CREATE TABLE user (
+	user_name VARCHAR NOT NULL, 
+	email VARCHAR NOT NULL, 
+	id INTEGER NOT NULL, 
+	created_at DATETIME NOT NULL, 
+	updated_at DATETIME NOT NULL, 
+	hashed_password VARCHAR, 
+	disabled BOOLEAN, 
+	PRIMARY KEY (id)
+)
+
+
+2025-05-12 03:39:10,694 - sqlalchemy.engine.Engine - INFO - [no key 0.00029s] ()
+2025-05-12 03:39:10,714 - sqlalchemy.engine.Engine - INFO - 
+CREATE TABLE taskreminder (
+	scheduled_at DATETIME NOT NULL, 
+	assignee VARCHAR NOT NULL, 
+	content VARCHAR(50) NOT NULL, 
+	created_by VARCHAR, 
+	modified_by VARCHAR, 
+	reminder_type VARCHAR(5) NOT NULL, 
+	id INTEGER NOT NULL, 
+	created_at DATETIME NOT NULL, 
+	updated_at DATETIME NOT NULL, 
+	PRIMARY KEY (id)
+)
+
+
+2025-05-12 03:39:10,714 - sqlalchemy.engine.Engine - INFO - [no key 0.00036s] ()
+2025-05-12 03:39:10,735 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-12 03:39:16,183 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-12 03:39:16,188 - sqlalchemy.engine.Engine - INFO - SELECT user.user_name, user.email, user.id, user.created_at, user.updated_at, user.hashed_password, user.disabled 
+FROM user 
+WHERE user.user_name = ?
+2025-05-12 03:39:16,190 - sqlalchemy.engine.Engine - INFO - [generated in 0.00095s] ('tam',)
+2025-05-12 03:39:16,193 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-05-12 03:39:28,124 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-12 03:39:28,126 - sqlalchemy.engine.Engine - INFO - SELECT user.user_name, user.email, user.id, user.created_at, user.updated_at, user.hashed_password, user.disabled 
+FROM user 
+WHERE user.email = ?
+2025-05-12 03:39:28,126 - sqlalchemy.engine.Engine - INFO - [generated in 0.00049s] ('user@example.com',)
+2025-05-12 03:39:28,129 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "/home/debian/.cache/pypoetry/virtualenvs/taskreminderserver-2lQxdBut-py3.10/lib/python3.10/site-packages/passlib/handlers/bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-05-12 03:39:28,400 - sqlalchemy.engine.Engine - INFO - INSERT INTO user (user_name, email, created_at, updated_at, hashed_password, disabled) VALUES (?, ?, ?, ?, ?, ?)
+2025-05-12 03:39:28,400 - sqlalchemy.engine.Engine - INFO - [generated in 0.00033s] ('tam', 'user@example.com', '2025-05-11 19:39:28.128123', '2025-05-11 19:39:28.128131', '$2b$12$I1lj95AXNvfqpkOBdNiQ1.F6T1rZSxJ9f8RkaOBxQf0oHuucvbGe.', 0)
+2025-05-12 03:39:28,401 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-12 03:39:28,425 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-12 03:39:28,427 - sqlalchemy.engine.Engine - INFO - SELECT user.user_name, user.email, user.id, user.created_at, user.updated_at, user.hashed_password, user.disabled 
+FROM user 
+WHERE user.id = ?
+2025-05-12 03:39:28,427 - sqlalchemy.engine.Engine - INFO - [generated in 0.00030s] (1,)
+2025-05-12 03:39:28,429 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-05-12 03:39:38,757 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-12 03:39:38,758 - sqlalchemy.engine.Engine - INFO - SELECT user.user_name, user.email, user.id, user.created_at, user.updated_at, user.hashed_password, user.disabled 
+FROM user 
+WHERE user.user_name = ?
+2025-05-12 03:39:38,758 - sqlalchemy.engine.Engine - INFO - [cached since 22.57s ago] ('tam',)
+2025-05-12 03:39:38,761 - sqlalchemy.engine.Engine - INFO - SELECT user.user_name, user.email, user.id, user.created_at, user.updated_at, user.hashed_password, user.disabled 
+FROM user 
+WHERE user.user_name = ?
+2025-05-12 03:39:38,761 - sqlalchemy.engine.Engine - INFO - [cached since 22.57s ago] ('tam',)
+2025-05-12 03:39:38,763 - sqlalchemy.engine.Engine - INFO - INSERT INTO taskreminder (scheduled_at, assignee, content, created_by, modified_by, reminder_type, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2025-05-12 03:39:38,763 - sqlalchemy.engine.Engine - INFO - [generated in 0.00035s] ('2025-05-11 19:34:46.084000', 'tam', 'compeleted readme file with instruction', 'tam', None, 'email', '2025-05-11 19:39:38.762493', '2025-05-11 19:39:38.762497')
+2025-05-12 03:39:38,764 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-12 03:39:38,790 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-12 03:39:38,792 - sqlalchemy.engine.Engine - INFO - SELECT taskreminder.scheduled_at, taskreminder.assignee, taskreminder.content, taskreminder.created_by, taskreminder.modified_by, taskreminder.reminder_type, taskreminder.id, taskreminder.created_at, taskreminder.updated_at 
+FROM taskreminder 
+WHERE taskreminder.id = ?
+2025-05-12 03:39:38,792 - sqlalchemy.engine.Engine - INFO - [generated in 0.00038s] (1,)
+2025-05-12 03:39:38,794 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-05-12 03:42:21,672 - taskserver.app - INFO - Shutting down the application...
+2025-05-12 03:57:03,059 - taskserver.app - INFO - Starting up the application...
+2025-05-12 03:57:03,059 - taskserver.database - INFO - init database
+2025-05-12 03:57:03,059 - taskserver.database - INFO - removing file db.sqlite3
+2025-05-12 03:57:03,060 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-12 03:57:03,060 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("user")
+2025-05-12 03:57:03,060 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-12 03:57:03,061 - sqlalchemy.engine.Engine - INFO - PRAGMA temp.table_info("user")
+2025-05-12 03:57:03,061 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-12 03:57:03,061 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("taskreminder")
+2025-05-12 03:57:03,061 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-12 03:57:03,062 - sqlalchemy.engine.Engine - INFO - PRAGMA temp.table_info("taskreminder")
+2025-05-12 03:57:03,062 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-12 03:57:03,063 - sqlalchemy.engine.Engine - INFO - 
+CREATE TABLE user (
+	user_name VARCHAR NOT NULL, 
+	email VARCHAR NOT NULL, 
+	id INTEGER NOT NULL, 
+	created_at DATETIME NOT NULL, 
+	updated_at DATETIME NOT NULL, 
+	hashed_password VARCHAR, 
+	disabled BOOLEAN, 
+	PRIMARY KEY (id)
+)
+
+
+2025-05-12 03:57:03,063 - sqlalchemy.engine.Engine - INFO - [no key 0.00018s] ()
+2025-05-12 03:57:03,085 - sqlalchemy.engine.Engine - INFO - 
+CREATE TABLE taskreminder (
+	scheduled_at DATETIME NOT NULL, 
+	assignee VARCHAR NOT NULL, 
+	content VARCHAR(50) NOT NULL, 
+	created_by VARCHAR, 
+	modified_by VARCHAR, 
+	reminder_type VARCHAR(5) NOT NULL, 
+	id INTEGER NOT NULL, 
+	created_at DATETIME NOT NULL, 
+	updated_at DATETIME NOT NULL, 
+	PRIMARY KEY (id)
+)
+
+
+2025-05-12 03:57:03,085 - sqlalchemy.engine.Engine - INFO - [no key 0.00024s] ()
+2025-05-12 03:57:03,104 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-12 03:57:27,822 - taskserver.app - INFO - Shutting down the application...

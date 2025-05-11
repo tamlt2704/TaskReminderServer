@@ -1,3 +1,33 @@
+This is a simple task reminder server implemented using FastAPI and can be deployed to Azure with infrastructrure defined in bicep file.
+
+## How to 
+
+### 1. See live server
+https://<deployed-app-url>.azurewebsites.net/docs#/
+
+### 2. Create a task
+#### 2.1 Create a user
+```
+curl -X 'POST' \
+  'https://<deployed-app-url>.azurewebsites.net/api/v1/users/' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "user_name": "<user_name>",
+  "email": "<user_email@example.com>",
+  "password": "<password>"
+}'
+```
+
+### 2.2 Login to get the access token
+```
+curl -X 'POST' \
+  'https://<deployed-app-url>.azurewebsites.net/token' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/x-www-form-urlencoded' \
+  -d 'grant_type=password&username=<user_name>&password=<password>&scope=&client_id=string&client_secret=string'
+```
+
 
 
 DEV notes
@@ -35,4 +65,22 @@ docker run -p 8000:8000 task-reminder-server-app
 docker tag task-reminder-server-app:latest tamlt2704/task-reminder-server-app:latest 
 
 docker push tamlt2704/task-reminder-server-app
+```
+
+7. azure
+```
+#login
+az login
+
+#show my subscription list 
+az account list --output table
+
+#list all my resource group
+az group list --output table 
+
+# create resource group
+az group create --name DevResourceGroup --location westeurope
+
+#deployment
+az deployment group create --resource-group DevResourceGroup --template-file infra\\main.bicep --parameters appName=TaskReminderServer dockerImage=tamlt2704/task-reminder-server-app
 ```
