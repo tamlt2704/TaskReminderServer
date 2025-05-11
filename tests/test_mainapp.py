@@ -6,7 +6,7 @@ from taskserver.database import get_session
 
 client = TestClient(app)
 # Set up a test database
-test_engine = create_engine("sqlite://", connect_args={"check_same_thread": False})
+test_engine = create_engine("sqlite:///.test.db", connect_args={"check_same_thread": False})
 SQLModel.metadata.create_all(test_engine)
 # Dependency override
 def override_get_session():
