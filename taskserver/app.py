@@ -1,5 +1,6 @@
 from fastapi import FastAPI
 import logging
+import logging.config
 from contextlib import asynccontextmanager
 
 logging.config.fileConfig(fname='log.conf', disable_existing_loggers=False)
@@ -13,3 +14,7 @@ async def lifespan(app: FastAPI):
     logger.info("Shutting down the application...")
 
 app = FastAPI(lifespan=lifespan)
+
+@app.get('/')
+def index():
+    return 'TaskReminderServer'
