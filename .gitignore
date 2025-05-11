@@ -1,0 +1,6 @@
+__pycache__/**
+server/__pycache__/**
+taskreminder/__pycache__/**
+logs
+*.db
+**/__pycache__/**
