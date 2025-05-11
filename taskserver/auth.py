@@ -10,7 +10,7 @@ from taskserver.auth_util import verify_password
 from .models import User
 from .schemas import Token
 from .database import get_session
-from .crud import find_user_by_email
+from .crud import find_user_by_username
 
 auth_router = APIRouter()
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
@@ -21,8 +21,8 @@ SECRET_KEY = "ff0f1c9df2a6c1dc603c46b7a6365b0b2e860559437520ae423d408ee74ee60b"
 ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 30
 
-def authenticate_user(session, user_email: str, password: str) -> User:
-    user: User = find_user_by_email(session, email=user_email)
+def authenticate_user(session, user_name: str, password: str) -> User:
+    user: User = find_user_by_username(session, user_name=user_name)
     if not user:
         return False
     if not verify_password(password, user.hashed_password):
@@ -44,7 +44,7 @@ async def login_for_access_token(
 
     access_token_expires = timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)
     access_token = create_access_token(
-        data={"sub": user.email}, expires_delta=access_token_expires
+        data={"sub": user.user_name}, expires_delta=access_token_expires
     )
     return Token(access_token=access_token, token_type="bearer")
 
@@ -72,13 +72,12 @@ async def get_current_user(
 
     try:
         payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
-        print('debuug payloadddddddddddddddddddd', payload)
-        user_email = payload.get("sub")
-        if user_email is None:
+        user_name = payload.get("sub")
+        if user_name is None:
             raise credentials_exception
     except jwt.InvalidTokenError:
         raise create_access_token
-    user = find_user_by_email(session, user_email)
+    user = find_user_by_username(session, user_name)
     if user is None:
         raise credentials_exception
     return user

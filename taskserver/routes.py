@@ -7,7 +7,7 @@ from sqlmodel import Session, select
 from taskserver.auth import get_current_active_user
 from taskserver.schemas import TaskReminderBase, TaskUpdate, UserCreate, UserRead
 from .database import get_session
-from .crud import create_task_reminder, delete_task_by_id, save_user, find_user_by_email_pattern, find_user_by_email, get_task_by_id, update_task_in_db
+from .crud import create_task_reminder, delete_task_by_id, find_user_by_username, save_user, find_user_by_email_pattern, find_user_by_email, get_task_by_id, update_task_in_db
 from .models import User
 
 logger = logging.getLogger(__name__)
@@ -20,9 +20,9 @@ def create_error(error_msg: str):
 
 @task_router.post("/")
 def create_tasks(task_base: TaskReminderBase, session = Depends(get_session), user: UserRead = Depends(get_current_active_user)):
-    user = find_user_by_email(session, task_base.assignee)
+    user = find_user_by_username(session, task_base.assignee)
     if not user:
-        raise create_error(f"User email {task_base.assignee} does not exist")
+        raise create_error(f"User name {task_base.assignee} does not exist")
     
     task_in_db = create_task_reminder(session, task_base, user)
     return task_in_db

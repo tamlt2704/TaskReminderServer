@@ -11,7 +11,7 @@ client = TestClient(app)
 # Dependency override
 app.dependency_overrides[get_session] = override_get_session
 
-def test_create_user_should_work():
+def test_create_user_should_work(setup_function):
     response = client.post('api/v1/users', json={
         "user_name": "first_user",
         "email": "user@example.com",
@@ -75,5 +75,12 @@ def test_duplicated_email_not_allowed():
     assert response.status_code==400
 
 def test_search_user_should_work():
+    response = client.post('api/v1/users', json={
+        "user_name": "third_user",
+        "email": "third_user@example.com",
+        "password": "stringst"
+    })
+    assert response.status_code == 200
+
     response = client.get('api/v1/users/search/example.com')
-    assert response.json() == [{'user_name': 'first_user', 'email': 'user@example.com'}, {'user_name': 'second_user', 'email': 'second_user@example.com'}, {'user_name': 'third_user', 'email': 'third_user@example.com'}]
+    assert response.json() == [{'user_name': 'third_user', 'email': 'third_user@example.com'}]

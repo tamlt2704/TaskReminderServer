@@ -1,5 +1,5 @@
 import pytest
-from sqlmodel import SQLModel, Session, create_engine
+from sqlmodel import SQLModel, Session, create_engine, delete
 import logging
 import logging.config
 
@@ -11,7 +11,6 @@ def override_get_session():
     with Session(test_engine) as session:
         yield session
         # session.rollback()
-        
 @pytest.fixture(scope="session", autouse=True)
 def setup_database():
     logger.info('init database')
@@ -19,3 +18,13 @@ def setup_database():
     yield
     logger.info('cleanup database')
     SQLModel.metadata.drop_all(test_engine)
+
+@pytest.fixture(scope="function", autouse=True)
+def setup_function():
+    print("Cleaning up before test...")
+    with Session(test_engine) as session:
+        for table in SQLModel.metadata.tables.values():
+            session.execute(delete(table))
+        session.commit()
+    yield
+    print("Cleaning up after test...")

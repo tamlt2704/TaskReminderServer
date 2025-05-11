@@ -39,6 +39,9 @@ def find_user_by_email_pattern(session: Session, email_pattern: str):
 def find_user_by_email(session, email):
     return session.exec(select(User).where(User.email == email)).first()
 
+def find_user_by_username(session, user_name):
+    return session.exec(select(User).where(User.user_name == user_name)).first()
+
 def get_task_by_id(session: Session, task_id: int):
     task = session.exec(select(TaskReminder).where(TaskReminder.id == task_id)).first()
     return task if task else None

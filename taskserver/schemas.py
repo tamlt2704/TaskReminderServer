@@ -1,5 +1,5 @@
 from pydantic import BaseModel, Field, field_validator, EmailStr
-from datetime import datetime, date
+from datetime import datetime, date, timezone
 from enum import Enum
 
 class ReminderType(str, Enum):
@@ -16,7 +16,7 @@ class TaskReminderBase(BaseModel):
 
     @field_validator("scheduled_at")
     def validate_password(scheduled_at):
-        if scheduled_at.date() < date.today():
+        if scheduled_at.date() < datetime.now(timezone.utc).date():
             raise ValueError("Scheduled should not be a past date")
         return scheduled_at
 

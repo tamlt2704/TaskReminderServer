@@ -13,4 +13,4 @@ eval $(poetry env activate)
 uvicorn main:app --reload
 
 5. run the test
-poetry run pytest -s # -s for printing
+poetry run pytest -vvs
