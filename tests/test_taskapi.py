@@ -113,3 +113,13 @@ def test_update_should_work():
     assert response.json()['created_by'] == test_current_active_user.user_name
     assert response.json()['modified_by'] == test_current_active_user.user_name
     assert response.json()['assignee'] == 'pikachu'
+
+def test_get_task_for_user_should_work():
+    ensure_user_exist()
+
+    response = create_a_valid_task(assignee='jerry', content='default')
+    assert response.status_code == 200
+    
+    response = client.get(f"/api/v1/tasks/usertask/jerry")
+    assert response.status_code == 200
+    assert len(response.json()) > 0

@@ -54,3 +54,7 @@ def delete_task_by_id(session: Session, task_id: int):
     session.exec(delete(TaskReminder).where(TaskReminder.id == task_id))
     session.commit()
     return {"message": "Task deleted successfully"}
+
+
+def get_all_tasks(session: Session, user_name: str):
+    return session.exec(select(TaskReminder).where(TaskReminder.assignee == user_name)).all()

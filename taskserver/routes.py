@@ -5,9 +5,9 @@ import logging
 
 from sqlmodel import Session, select
 from taskserver.auth import get_current_active_user
-from taskserver.schemas import TaskReminderBase, TaskReminderCreate, TaskUpdate, UserCreate, UserRead
+from taskserver.schemas import TaskReminderCreate, TaskUpdate, UserCreate, UserRead
 from .database import get_session
-from .crud import create_task_reminder, delete_task_by_id, find_user_by_username, save_user, find_user_by_email_pattern, find_user_by_email, get_task_by_id, update_task_in_db
+from .crud import create_task_reminder, delete_task_by_id, find_user_by_username, save_user, find_user_by_email_pattern, get_all_tasks, get_task_by_id, update_task_in_db
 from .models import User
 
 logger = logging.getLogger(__name__)
@@ -47,9 +47,9 @@ def update_task(task_id: int, updated_task: TaskUpdate, session: Session = Depen
 def remove_task(task_id: int, session: Session = Depends(get_session), user: UserRead = Depends(get_current_active_user)):
     return delete_task_by_id(session, task_id)
 
-@task_router.get("/")
-def get_tasks():
-    return []
+@task_router.get("/usertask/{user_name}")
+def get_tasks(user_name: str, session: Session = Depends(get_session)):
+    return get_all_tasks(session, user_name)
 
 @user_router.post("/")
 def create_user(user_base: UserCreate, session: Session = Depends(get_session)):
