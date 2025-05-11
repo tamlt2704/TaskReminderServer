@@ -4,6 +4,7 @@ from fastapi import APIRouter, Depends, HTTPException
 import logging
 
 from sqlmodel import Session, select
+from taskserver.auth import get_current_active_user
 from taskserver.schemas import TaskReminderBase, UserCreate, UserRead
 from .database import get_session
 from .crud import create_task_reminder, delete_task_by_id, save_user, find_user_by_email_pattern, find_user_by_email, get_task_by_id
@@ -35,7 +36,7 @@ def fetch_task(task_id: int, session: Session = Depends(get_session)):
     return task_in_db
 
 @task_router.delete("/{task_id}")
-def remove_task(task_id: int, session: Session = Depends(get_session)):
+def remove_task(task_id: int, session: Session = Depends(get_session), user: UserRead = Depends(get_current_active_user)):
     return delete_task_by_id(session, task_id)
 
 @task_router.get("/")

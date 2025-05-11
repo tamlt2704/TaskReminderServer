@@ -61,7 +61,8 @@ def create_access_token(data: dict, expires_delta: timedelta | None = None):
 
 
 async def get_current_user(
-        token: Annotated[str, Depends(oauth2_scheme)]
+        token: Annotated[str, Depends(oauth2_scheme)],
+        session: Session = Depends(get_session)
 ):
     credentials_exception = HTTPException(
         status_code=status.HTTP_401_UNAUTHORIZED,
@@ -71,19 +72,20 @@ async def get_current_user(
 
     try:
         payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
+        print('debuug payloadddddddddddddddddddd', payload)
         user_email = payload.get("sub")
         if user_email is None:
             raise credentials_exception
     except jwt.InvalidTokenError:
         raise create_access_token
-    user = find_user_by_email(user_email)
+    user = find_user_by_email(session, user_email)
     if user is None:
         raise credentials_exception
     return user
 
 
 async def get_current_active_user(
-        current_user: Annotated[User, Depends(get_current_user)],
+        current_user: Annotated[User, Depends(get_current_user)]        
 ):
     if current_user.disabled:
         raise HTTPException(status_code=400, detail="Invalid user")
