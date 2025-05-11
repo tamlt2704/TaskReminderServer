@@ -1,12 +1,24 @@
 
+from datetime import datetime, timezone
 from sqlmodel import Session, delete, select
 
-from taskserver.schemas import TaskReminderCreate, UserBase, UserCreate
+from taskserver.schemas import TaskReminderCreate, UserBase, UserCreate, TaskUpdate
 from taskserver.models import TaskReminder, User
 from .auth_util import get_password_hash
 
-def create_task_reminder(session: Session, data: TaskReminderCreate):
-    reminder = TaskReminder.model_validate(data)        
+def update_task_in_db(session: Session, user: User, task: TaskReminder, update_data: TaskUpdate):
+    updated_task = task.model_copy(update=update_data.model_dump(exclude_none=True))
+    updated_task.set_modified_by(user)
+    updated_task.updated_at = datetime.now(timezone.utc)
+    session.add(updated_task)
+    session.commit()
+    session.refresh(updated_task)
+    return updated_task
+    
+
+def create_task_reminder(session: Session, data: TaskReminderCreate, user: User):
+    reminder: TaskReminder = TaskReminder.model_validate(data)        
+    reminder.set_created_by(user)
     session.add(reminder)
     session.commit()
     session.refresh(reminder)

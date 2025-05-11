@@ -10,15 +10,21 @@ class TaskReminderBase(BaseModel):
     scheduled_at: datetime
     assignee: str
     content: str = Field(min_length=5, max_length=50)
-    created_by: str
-    modified_by: str
-    reminder_type: ReminderType
+    created_by: str | None = None
+    modified_by: str | None = None
+    reminder_type: ReminderType = Field(default=ReminderType.email)
 
     @field_validator("scheduled_at")
     def validate_password(scheduled_at):
         if scheduled_at.date() < date.today():
             raise ValueError("Scheduled should not be a past date")
         return scheduled_at
+
+class TaskUpdate(TaskReminderBase):
+    scheduled_at: datetime | None = None
+    assignee: str | None = None
+    content: str | None
+    reminder_type: ReminderType | None
 
 class TaskReminderCreate(TaskReminderBase):
     pass

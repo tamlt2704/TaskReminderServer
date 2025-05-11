@@ -5,9 +5,9 @@ import logging
 
 from sqlmodel import Session, select
 from taskserver.auth import get_current_active_user
-from taskserver.schemas import TaskReminderBase, UserCreate, UserRead
+from taskserver.schemas import TaskReminderBase, TaskUpdate, UserCreate, UserRead
 from .database import get_session
-from .crud import create_task_reminder, delete_task_by_id, save_user, find_user_by_email_pattern, find_user_by_email, get_task_by_id
+from .crud import create_task_reminder, delete_task_by_id, save_user, find_user_by_email_pattern, find_user_by_email, get_task_by_id, update_task_in_db
 from .models import User
 
 logger = logging.getLogger(__name__)
@@ -19,12 +19,12 @@ def create_error(error_msg: str):
     return HTTPException(status_code=400, detail=error_msg)
 
 @task_router.post("/")
-def create_tasks(task_base: TaskReminderBase, session = Depends(get_session)):
+def create_tasks(task_base: TaskReminderBase, session = Depends(get_session), user: UserRead = Depends(get_current_active_user)):
     user = find_user_by_email(session, task_base.assignee)
     if not user:
         raise create_error(f"User email {task_base.assignee} does not exist")
     
-    task_in_db = create_task_reminder(session, task_base)
+    task_in_db = create_task_reminder(session, task_base, user)
     return task_in_db
 
 @task_router.get("/{task_id}")
@@ -34,6 +34,14 @@ def fetch_task(task_id: int, session: Session = Depends(get_session)):
         raise create_error(f"Task with id: {task_id} does not exist")
     
     return task_in_db
+
+@task_router.put("/{task_id}")
+def update_task(task_id: int, updated_task: TaskUpdate, session: Session = Depends(get_session), user: UserRead = Depends(get_current_active_user)):
+    task_in_db = get_task_by_id(session, task_id)
+    if not task_in_db:
+        raise create_error(f"Task with id: {task_id} does not exist")
+    updated_task = update_task_in_db(session, user, task_in_db, updated_task)
+    return updated_task
 
 @task_router.delete("/{task_id}")
 def remove_task(task_id: int, session: Session = Depends(get_session), user: UserRead = Depends(get_current_active_user)):
