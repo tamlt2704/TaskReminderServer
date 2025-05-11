@@ -4,3 +4,4 @@ taskreminder/__pycache__/**
 logs
 *.db
 **/__pycache__/**
+taskserver.log

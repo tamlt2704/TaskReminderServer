@@ -2,6 +2,7 @@ from fastapi import FastAPI
 import logging
 import logging.config
 from contextlib import asynccontextmanager
+from .database import init_db
 
 logging.config.fileConfig(fname='log.conf', disable_existing_loggers=False)
 logger = logging.getLogger(__name__)
@@ -9,7 +10,7 @@ logger = logging.getLogger(__name__)
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     logger.info("Starting up the application...")
-    # SQLModel.metadata.create_all(engine)
+    init_db()
     yield
     logger.info("Shutting down the application...")
 
