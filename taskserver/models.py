@@ -1,7 +1,6 @@
-from sqlmodel import SQLModel, Field
-from typing import Optional
+from sqlmodel import SQLModel, Field, UniqueConstraint
 from datetime import datetime, timezone
-from .schemas import TaskReminderBase, ReminderType
+from .schemas import TaskReminderBase, UserBase
 
 class BaseEntity(SQLModel):
     id: int = Field(default=None, primary_key=True)
@@ -10,3 +9,7 @@ class BaseEntity(SQLModel):
 
 class TaskReminder(BaseEntity, TaskReminderBase, table=True):
     pass
+
+class User(BaseEntity, UserBase, table=True):
+    class Config:
+        table_args = (UniqueConstraint("email", name="unique_email"),)

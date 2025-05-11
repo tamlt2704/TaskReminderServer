@@ -1,4 +1,4 @@
-from pydantic import BaseModel, Field, field_validator, validator
+from pydantic import BaseModel, Field, field_validator, EmailStr
 from datetime import datetime, date
 from enum import Enum
 
@@ -27,3 +27,11 @@ class TaskReminderRead(TaskReminderCreate):
     id: int
     created_at: datetime
     updated_at: datetime
+
+
+class UserBase(BaseModel):
+    name: str
+    email: EmailStr
+
+class UserRead(UserBase):
+    pass
