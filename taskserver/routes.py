@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Depends, HTTPException
 import logging
 
-from sqlmodel import Session
+from sqlmodel import Session, select
 from taskserver.schemas import TaskReminderBase, UserBase, UserRead
 from .database import get_session
 from .crud import create_task_reminder, save_user, find_user_by_email_pattern
@@ -25,7 +25,7 @@ def get_tasks():
 
 @user_router.post("/")
 def create_user(user_base: UserBase, session: Session = Depends(get_session)):
-    existing_user = session.query(User).filter_by(email=user_base.email).first()
+    existing_user = session.exec(select(User).filter_by(email=user_base.email)).first()
     if existing_user:
         raise HTTPException(status_code=400, detail="User already exists")
     try:

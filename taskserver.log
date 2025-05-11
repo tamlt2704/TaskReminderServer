@@ -938,3 +938,676 @@ WHERE taskreminder.id = ?
 2025-05-11 16:04:32,271 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("taskreminder")
 2025-05-11 16:04:32,271 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
 2025-05-11 16:04:32,272 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-11 16:05:32,760 - taskserver.app - INFO - Shutting down the application...
+2025-05-11 16:05:33,376 - taskserver.app - INFO - Starting up the application...
+2025-05-11 16:05:33,376 - taskserver.database - INFO - init database
+2025-05-11 16:05:33,377 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 16:05:33,377 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("taskreminder")
+2025-05-11 16:05:33,377 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 16:05:33,378 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-11 16:05:40,717 - taskserver.app - INFO - Shutting down the application...
+2025-05-11 16:05:41,380 - taskserver.app - INFO - Starting up the application...
+2025-05-11 16:05:41,380 - taskserver.database - INFO - init database
+2025-05-11 16:05:41,381 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 16:05:41,381 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("taskreminder")
+2025-05-11 16:05:41,381 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 16:05:41,382 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-11 16:05:50,421 - taskserver.app - INFO - Shutting down the application...
+2025-05-11 16:05:51,098 - taskserver.app - INFO - Starting up the application...
+2025-05-11 16:05:51,098 - taskserver.database - INFO - init database
+2025-05-11 16:05:51,099 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 16:05:51,099 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("taskreminder")
+2025-05-11 16:05:51,099 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 16:05:51,100 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-11 16:05:52,005 - taskserver.app - INFO - Shutting down the application...
+2025-05-11 16:05:52,653 - taskserver.app - INFO - Starting up the application...
+2025-05-11 16:05:52,653 - taskserver.database - INFO - init database
+2025-05-11 16:05:52,653 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 16:05:52,654 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("taskreminder")
+2025-05-11 16:05:52,654 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 16:05:52,655 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-11 16:06:00,798 - taskserver.app - INFO - Shutting down the application...
+2025-05-11 16:06:01,378 - taskserver.app - INFO - Starting up the application...
+2025-05-11 16:06:01,378 - taskserver.database - INFO - init database
+2025-05-11 16:06:01,379 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 16:06:01,379 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("taskreminder")
+2025-05-11 16:06:01,380 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 16:06:01,380 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-11 16:06:14,152 - taskserver.app - INFO - Shutting down the application...
+2025-05-11 16:06:14,882 - taskserver.app - INFO - Starting up the application...
+2025-05-11 16:06:14,882 - taskserver.database - INFO - init database
+2025-05-11 16:06:14,883 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 16:06:14,883 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("taskreminder")
+2025-05-11 16:06:14,883 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 16:06:14,884 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-11 16:07:10,549 - taskserver.app - INFO - Shutting down the application...
+2025-05-11 16:07:11,268 - taskserver.app - INFO - Starting up the application...
+2025-05-11 16:07:11,268 - taskserver.database - INFO - init database
+2025-05-11 16:07:11,269 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 16:07:11,269 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("taskreminder")
+2025-05-11 16:07:11,269 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 16:07:11,270 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-11 16:07:49,636 - taskserver.app - INFO - Shutting down the application...
+2025-05-11 16:07:50,327 - taskserver.app - INFO - Starting up the application...
+2025-05-11 16:07:50,327 - taskserver.database - INFO - init database
+2025-05-11 16:07:50,328 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 16:07:50,328 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("taskreminder")
+2025-05-11 16:07:50,328 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 16:07:50,329 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-11 16:08:05,519 - taskserver.app - INFO - Shutting down the application...
+2025-05-11 16:08:06,158 - taskserver.app - INFO - Starting up the application...
+2025-05-11 16:08:06,158 - taskserver.database - INFO - init database
+2025-05-11 16:08:06,159 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 16:08:06,159 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("taskreminder")
+2025-05-11 16:08:06,159 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 16:08:06,160 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-11 16:08:07,163 - taskserver.app - INFO - Shutting down the application...
+2025-05-11 16:08:07,978 - taskserver.app - INFO - Starting up the application...
+2025-05-11 16:08:07,979 - taskserver.database - INFO - init database
+2025-05-11 16:08:07,980 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 16:08:07,980 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("taskreminder")
+2025-05-11 16:08:07,980 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 16:08:07,981 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-11 16:08:13,403 - taskserver.app - INFO - Shutting down the application...
+2025-05-11 16:09:35,412 - taskserver.app - INFO - Starting up the application...
+2025-05-11 16:09:35,412 - taskserver.database - INFO - init database
+2025-05-11 16:09:35,412 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 16:09:35,413 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("taskreminder")
+2025-05-11 16:09:35,413 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 16:09:35,414 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-11 16:09:51,574 - taskserver.app - INFO - Shutting down the application...
+2025-05-11 16:09:52,243 - taskserver.app - INFO - Starting up the application...
+2025-05-11 16:09:52,243 - taskserver.database - INFO - init database
+2025-05-11 16:09:52,243 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 16:09:52,244 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("taskreminder")
+2025-05-11 16:09:52,244 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 16:09:52,245 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-11 16:09:52,747 - taskserver.app - INFO - Shutting down the application...
+2025-05-11 16:09:53,400 - taskserver.app - INFO - Starting up the application...
+2025-05-11 16:09:53,400 - taskserver.database - INFO - init database
+2025-05-11 16:09:53,401 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 16:09:53,401 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("taskreminder")
+2025-05-11 16:09:53,401 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 16:09:53,402 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-11 16:09:53,704 - taskserver.app - INFO - Shutting down the application...
+2025-05-11 16:09:54,289 - taskserver.app - INFO - Starting up the application...
+2025-05-11 16:09:54,289 - taskserver.database - INFO - init database
+2025-05-11 16:09:54,290 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 16:09:54,290 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("taskreminder")
+2025-05-11 16:09:54,290 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 16:09:54,291 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-11 16:10:38,424 - taskserver.app - INFO - Shutting down the application...
+2025-05-11 16:10:39,107 - taskserver.app - INFO - Starting up the application...
+2025-05-11 16:10:39,107 - taskserver.database - INFO - init database
+2025-05-11 16:10:39,108 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 16:10:39,108 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("taskreminder")
+2025-05-11 16:10:39,108 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 16:10:39,109 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-11 16:10:50,360 - taskserver.app - INFO - Shutting down the application...
+2025-05-11 16:12:28,063 - taskserver.app - INFO - Starting up the application...
+2025-05-11 16:12:28,063 - taskserver.database - INFO - init database
+2025-05-11 16:12:28,064 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 16:12:28,065 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("taskreminder")
+2025-05-11 16:12:28,065 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 16:12:28,065 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("user")
+2025-05-11 16:12:28,065 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 16:12:28,066 - sqlalchemy.engine.Engine - INFO - PRAGMA temp.table_info("user")
+2025-05-11 16:12:28,066 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 16:12:28,067 - sqlalchemy.engine.Engine - INFO - 
+CREATE TABLE user (
+	id INTEGER NOT NULL, 
+	created_at DATETIME NOT NULL, 
+	updated_at DATETIME NOT NULL, 
+	PRIMARY KEY (id)
+)
+
+
+2025-05-11 16:12:28,067 - sqlalchemy.engine.Engine - INFO - [no key 0.00020s] ()
+2025-05-11 16:12:28,084 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-11 16:13:02,120 - taskserver.app - INFO - Shutting down the application...
+2025-05-11 16:13:02,690 - taskserver.app - INFO - Starting up the application...
+2025-05-11 16:13:02,691 - taskserver.database - INFO - init database
+2025-05-11 16:13:02,691 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 16:13:02,692 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("taskreminder")
+2025-05-11 16:13:02,692 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 16:13:02,692 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("user")
+2025-05-11 16:13:02,693 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 16:13:02,693 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-11 16:13:23,428 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 16:13:23,430 - sqlalchemy.engine.Engine - INFO - INSERT INTO user (created_at, updated_at) VALUES (?, ?)
+2025-05-11 16:13:23,430 - sqlalchemy.engine.Engine - INFO - [generated in 0.00039s] ('2025-05-11 08:13:23.427432', '2025-05-11 08:13:23.427441')
+2025-05-11 16:13:23,431 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-11 16:13:23,450 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 16:13:23,453 - sqlalchemy.engine.Engine - INFO - SELECT user.id, user.created_at, user.updated_at 
+FROM user 
+WHERE user.id = ?
+2025-05-11 16:13:23,454 - sqlalchemy.engine.Engine - INFO - [generated in 0.00041s] (1,)
+2025-05-11 16:13:23,455 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-05-11 16:13:45,310 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 16:13:45,311 - sqlalchemy.engine.Engine - INFO - INSERT INTO user (created_at, updated_at) VALUES (?, ?)
+2025-05-11 16:13:45,311 - sqlalchemy.engine.Engine - INFO - [cached since 21.88s ago] ('2025-05-11 08:13:45.310421', '2025-05-11 08:13:45.310428')
+2025-05-11 16:13:45,312 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-05-11 16:13:47,434 - taskserver.app - INFO - Shutting down the application...
+2025-05-11 16:13:48,146 - taskserver.app - INFO - Starting up the application...
+2025-05-11 16:13:48,147 - taskserver.database - INFO - init database
+2025-05-11 16:13:48,147 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 16:13:48,148 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("taskreminder")
+2025-05-11 16:13:48,148 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 16:13:48,148 - sqlalchemy.engine.Engine - INFO - PRAGMA temp.table_info("taskreminder")
+2025-05-11 16:13:48,149 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 16:13:48,149 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("user")
+2025-05-11 16:13:48,149 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 16:13:48,149 - sqlalchemy.engine.Engine - INFO - PRAGMA temp.table_info("user")
+2025-05-11 16:13:48,150 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 16:13:48,150 - sqlalchemy.engine.Engine - INFO - 
+CREATE TABLE taskreminder (
+	scheduled_at DATETIME NOT NULL, 
+	assignee VARCHAR NOT NULL, 
+	content VARCHAR(50) NOT NULL, 
+	created_by VARCHAR NOT NULL, 
+	modified_by VARCHAR NOT NULL, 
+	reminder_type VARCHAR(5) NOT NULL, 
+	id INTEGER NOT NULL, 
+	created_at DATETIME NOT NULL, 
+	updated_at DATETIME NOT NULL, 
+	PRIMARY KEY (id)
+)
+
+
+2025-05-11 16:13:48,151 - sqlalchemy.engine.Engine - INFO - [no key 0.00018s] ()
+2025-05-11 16:13:48,174 - sqlalchemy.engine.Engine - INFO - 
+CREATE TABLE user (
+	id INTEGER NOT NULL, 
+	created_at DATETIME NOT NULL, 
+	updated_at DATETIME NOT NULL, 
+	PRIMARY KEY (id)
+)
+
+
+2025-05-11 16:13:48,175 - sqlalchemy.engine.Engine - INFO - [no key 0.00039s] ()
+2025-05-11 16:13:48,193 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-11 16:13:55,624 - taskserver.app - INFO - Shutting down the application...
+2025-05-11 16:14:06,526 - taskserver.app - INFO - Starting up the application...
+2025-05-11 16:14:06,527 - taskserver.database - INFO - init database
+2025-05-11 16:14:06,527 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 16:14:06,528 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("taskreminder")
+2025-05-11 16:14:06,528 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 16:14:06,529 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("user")
+2025-05-11 16:14:06,529 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 16:14:06,529 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-11 16:14:07,725 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 16:14:07,727 - sqlalchemy.engine.Engine - INFO - INSERT INTO user (name, email, created_at, updated_at) VALUES (?, ?, ?, ?)
+2025-05-11 16:14:07,727 - sqlalchemy.engine.Engine - INFO - [generated in 0.00048s] ('tam', 'user@example.com', '2025-05-11 08:14:07.723819', '2025-05-11 08:14:07.723831')
+2025-05-11 16:14:07,728 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-05-11 16:14:24,520 - taskserver.app - INFO - Shutting down the application...
+2025-05-11 16:14:25,137 - taskserver.app - INFO - Starting up the application...
+2025-05-11 16:14:25,137 - taskserver.database - INFO - init database
+2025-05-11 16:14:25,138 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 16:14:25,138 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("taskreminder")
+2025-05-11 16:14:25,139 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 16:14:25,139 - sqlalchemy.engine.Engine - INFO - PRAGMA temp.table_info("taskreminder")
+2025-05-11 16:14:25,139 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 16:14:25,140 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("user")
+2025-05-11 16:14:25,140 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 16:14:25,140 - sqlalchemy.engine.Engine - INFO - PRAGMA temp.table_info("user")
+2025-05-11 16:14:25,140 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 16:14:25,141 - sqlalchemy.engine.Engine - INFO - 
+CREATE TABLE taskreminder (
+	scheduled_at DATETIME NOT NULL, 
+	assignee VARCHAR NOT NULL, 
+	content VARCHAR(50) NOT NULL, 
+	created_by VARCHAR NOT NULL, 
+	modified_by VARCHAR NOT NULL, 
+	reminder_type VARCHAR(5) NOT NULL, 
+	id INTEGER NOT NULL, 
+	created_at DATETIME NOT NULL, 
+	updated_at DATETIME NOT NULL, 
+	PRIMARY KEY (id)
+)
+
+
+2025-05-11 16:14:25,141 - sqlalchemy.engine.Engine - INFO - [no key 0.00021s] ()
+2025-05-11 16:14:25,165 - sqlalchemy.engine.Engine - INFO - 
+CREATE TABLE user (
+	name VARCHAR NOT NULL, 
+	email VARCHAR NOT NULL, 
+	id INTEGER NOT NULL, 
+	created_at DATETIME NOT NULL, 
+	updated_at DATETIME NOT NULL, 
+	PRIMARY KEY (id)
+)
+
+
+2025-05-11 16:14:25,165 - sqlalchemy.engine.Engine - INFO - [no key 0.00028s] ()
+2025-05-11 16:14:25,189 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-11 16:14:28,283 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 16:14:28,285 - sqlalchemy.engine.Engine - INFO - INSERT INTO user (name, email, created_at, updated_at) VALUES (?, ?, ?, ?)
+2025-05-11 16:14:28,285 - sqlalchemy.engine.Engine - INFO - [generated in 0.00039s] ('tam', 'user@example.com', '2025-05-11 08:14:28.282874', '2025-05-11 08:14:28.282881')
+2025-05-11 16:14:28,286 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-11 16:14:28,307 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 16:14:28,309 - sqlalchemy.engine.Engine - INFO - SELECT user.name, user.email, user.id, user.created_at, user.updated_at 
+FROM user 
+WHERE user.id = ?
+2025-05-11 16:14:28,310 - sqlalchemy.engine.Engine - INFO - [generated in 0.00035s] (1,)
+2025-05-11 16:14:28,311 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-05-11 16:17:13,703 - taskserver.app - INFO - Shutting down the application...
+2025-05-11 16:17:23,303 - taskserver.app - INFO - Starting up the application...
+2025-05-11 16:17:23,304 - taskserver.database - INFO - init database
+2025-05-11 16:17:23,305 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 16:17:23,305 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("taskreminder")
+2025-05-11 16:17:23,305 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 16:17:23,306 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("user")
+2025-05-11 16:17:23,306 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 16:17:23,307 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-11 16:17:32,385 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 16:17:32,387 - sqlalchemy.engine.Engine - INFO - INSERT INTO user (name, email, created_at, updated_at) VALUES (?, ?, ?, ?)
+2025-05-11 16:17:32,387 - sqlalchemy.engine.Engine - INFO - [generated in 0.00036s] ('tam', 'user@example.com', '2025-05-11 08:17:32.384532', '2025-05-11 08:17:32.384541')
+2025-05-11 16:17:32,388 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-11 16:17:32,404 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 16:17:32,408 - sqlalchemy.engine.Engine - INFO - SELECT user.name, user.email, user.id, user.created_at, user.updated_at 
+FROM user 
+WHERE user.id = ?
+2025-05-11 16:17:32,408 - sqlalchemy.engine.Engine - INFO - [generated in 0.00059s] (2,)
+2025-05-11 16:17:32,414 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-05-11 16:17:39,884 - taskserver.app - INFO - Shutting down the application...
+2025-05-11 16:17:40,672 - taskserver.app - INFO - Starting up the application...
+2025-05-11 16:17:40,672 - taskserver.database - INFO - init database
+2025-05-11 16:17:40,673 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 16:17:40,673 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("taskreminder")
+2025-05-11 16:17:40,674 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 16:17:40,675 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("user")
+2025-05-11 16:17:40,677 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 16:17:40,679 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-11 16:17:41,734 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 16:17:41,737 - sqlalchemy.engine.Engine - INFO - INSERT INTO user (name, email, created_at, updated_at) VALUES (?, ?, ?, ?)
+2025-05-11 16:17:41,739 - sqlalchemy.engine.Engine - INFO - [generated in 0.00185s] ('tam', 'user@example.com', '2025-05-11 08:17:41.733516', '2025-05-11 08:17:41.733527')
+2025-05-11 16:17:41,741 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-11 16:17:41,765 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 16:17:41,767 - sqlalchemy.engine.Engine - INFO - SELECT user.name, user.email, user.id, user.created_at, user.updated_at 
+FROM user 
+WHERE user.id = ?
+2025-05-11 16:17:41,768 - sqlalchemy.engine.Engine - INFO - [generated in 0.00031s] (3,)
+2025-05-11 16:17:41,769 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-05-11 16:20:47,131 - taskserver.app - INFO - Shutting down the application...
+2025-05-11 16:20:47,884 - taskserver.app - INFO - Starting up the application...
+2025-05-11 16:20:47,884 - taskserver.database - INFO - init database
+2025-05-11 16:20:47,884 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 16:20:47,885 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("taskreminder")
+2025-05-11 16:20:47,885 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 16:20:47,885 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("user")
+2025-05-11 16:20:47,885 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 16:20:47,886 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-11 16:20:48,491 - taskserver.app - INFO - Starting up the application...
+2025-05-11 16:20:48,491 - taskserver.database - INFO - init database
+2025-05-11 16:20:48,491 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 16:20:48,492 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("taskreminder")
+2025-05-11 16:20:48,492 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 16:20:48,492 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("user")
+2025-05-11 16:20:48,493 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 16:20:48,493 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-11 16:20:48,695 - taskserver.app - INFO - Shutting down the application...
+2025-05-11 16:20:49,366 - taskserver.app - INFO - Starting up the application...
+2025-05-11 16:20:49,366 - taskserver.database - INFO - init database
+2025-05-11 16:20:49,367 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 16:20:49,367 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("taskreminder")
+2025-05-11 16:20:49,367 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 16:20:49,368 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("user")
+2025-05-11 16:20:49,368 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 16:20:49,368 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-11 16:20:54,086 - taskserver.app - INFO - Shutting down the application...
+2025-05-11 16:20:54,715 - taskserver.app - INFO - Starting up the application...
+2025-05-11 16:20:54,715 - taskserver.database - INFO - init database
+2025-05-11 16:20:54,716 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 16:20:54,716 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("taskreminder")
+2025-05-11 16:20:54,716 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 16:20:54,717 - sqlalchemy.engine.Engine - INFO - PRAGMA temp.table_info("taskreminder")
+2025-05-11 16:20:54,717 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 16:20:54,717 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("user")
+2025-05-11 16:20:54,718 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 16:20:54,718 - sqlalchemy.engine.Engine - INFO - PRAGMA temp.table_info("user")
+2025-05-11 16:20:54,718 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 16:20:54,719 - sqlalchemy.engine.Engine - INFO - 
+CREATE TABLE taskreminder (
+	scheduled_at DATETIME NOT NULL, 
+	assignee VARCHAR NOT NULL, 
+	content VARCHAR(50) NOT NULL, 
+	created_by VARCHAR NOT NULL, 
+	modified_by VARCHAR NOT NULL, 
+	reminder_type VARCHAR(5) NOT NULL, 
+	id INTEGER NOT NULL, 
+	created_at DATETIME NOT NULL, 
+	updated_at DATETIME NOT NULL, 
+	PRIMARY KEY (id)
+)
+
+
+2025-05-11 16:20:54,719 - sqlalchemy.engine.Engine - INFO - [no key 0.00021s] ()
+2025-05-11 16:20:54,737 - sqlalchemy.engine.Engine - INFO - 
+CREATE TABLE user (
+	name VARCHAR NOT NULL, 
+	email VARCHAR NOT NULL, 
+	id INTEGER NOT NULL, 
+	created_at DATETIME NOT NULL, 
+	updated_at DATETIME NOT NULL, 
+	PRIMARY KEY (id)
+)
+
+
+2025-05-11 16:20:54,737 - sqlalchemy.engine.Engine - INFO - [no key 0.00025s] ()
+2025-05-11 16:20:54,754 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-11 16:20:59,810 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 16:20:59,812 - sqlalchemy.engine.Engine - INFO - INSERT INTO user (name, email, created_at, updated_at) VALUES (?, ?, ?, ?)
+2025-05-11 16:20:59,812 - sqlalchemy.engine.Engine - INFO - [generated in 0.00037s] ('tam', 'user@example.com', '2025-05-11 08:20:59.810209', '2025-05-11 08:20:59.810217')
+2025-05-11 16:20:59,813 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-11 16:20:59,835 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 16:20:59,837 - sqlalchemy.engine.Engine - INFO - SELECT user.name, user.email, user.id, user.created_at, user.updated_at 
+FROM user 
+WHERE user.id = ?
+2025-05-11 16:20:59,837 - sqlalchemy.engine.Engine - INFO - [generated in 0.00026s] (1,)
+2025-05-11 16:20:59,839 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-05-11 16:21:00,884 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 16:21:00,884 - sqlalchemy.engine.Engine - INFO - INSERT INTO user (name, email, created_at, updated_at) VALUES (?, ?, ?, ?)
+2025-05-11 16:21:00,884 - sqlalchemy.engine.Engine - INFO - [cached since 1.073s ago] ('tam', 'user@example.com', '2025-05-11 08:21:00.883775', '2025-05-11 08:21:00.883783')
+2025-05-11 16:21:00,885 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-11 16:21:00,908 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 16:21:00,908 - sqlalchemy.engine.Engine - INFO - SELECT user.name, user.email, user.id, user.created_at, user.updated_at 
+FROM user 
+WHERE user.id = ?
+2025-05-11 16:21:00,909 - sqlalchemy.engine.Engine - INFO - [cached since 1.072s ago] (2,)
+2025-05-11 16:21:00,910 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-05-11 16:21:01,812 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 16:21:01,813 - sqlalchemy.engine.Engine - INFO - INSERT INTO user (name, email, created_at, updated_at) VALUES (?, ?, ?, ?)
+2025-05-11 16:21:01,813 - sqlalchemy.engine.Engine - INFO - [cached since 2.001s ago] ('tam', 'user@example.com', '2025-05-11 08:21:01.812522', '2025-05-11 08:21:01.812530')
+2025-05-11 16:21:01,814 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-11 16:21:01,837 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 16:21:01,837 - sqlalchemy.engine.Engine - INFO - SELECT user.name, user.email, user.id, user.created_at, user.updated_at 
+FROM user 
+WHERE user.id = ?
+2025-05-11 16:21:01,838 - sqlalchemy.engine.Engine - INFO - [cached since 2.001s ago] (3,)
+2025-05-11 16:21:01,839 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-05-11 16:21:02,310 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 16:21:02,310 - sqlalchemy.engine.Engine - INFO - INSERT INTO user (name, email, created_at, updated_at) VALUES (?, ?, ?, ?)
+2025-05-11 16:21:02,310 - sqlalchemy.engine.Engine - INFO - [cached since 2.498s ago] ('tam', 'user@example.com', '2025-05-11 08:21:02.309794', '2025-05-11 08:21:02.309802')
+2025-05-11 16:21:02,311 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-11 16:21:02,333 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 16:21:02,333 - sqlalchemy.engine.Engine - INFO - SELECT user.name, user.email, user.id, user.created_at, user.updated_at 
+FROM user 
+WHERE user.id = ?
+2025-05-11 16:21:02,333 - sqlalchemy.engine.Engine - INFO - [cached since 2.496s ago] (4,)
+2025-05-11 16:21:02,334 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-05-11 16:21:02,714 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 16:21:02,715 - sqlalchemy.engine.Engine - INFO - INSERT INTO user (name, email, created_at, updated_at) VALUES (?, ?, ?, ?)
+2025-05-11 16:21:02,715 - sqlalchemy.engine.Engine - INFO - [cached since 2.903s ago] ('tam', 'user@example.com', '2025-05-11 08:21:02.714162', '2025-05-11 08:21:02.714171')
+2025-05-11 16:21:02,716 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-11 16:21:02,740 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 16:21:02,740 - sqlalchemy.engine.Engine - INFO - SELECT user.name, user.email, user.id, user.created_at, user.updated_at 
+FROM user 
+WHERE user.id = ?
+2025-05-11 16:21:02,740 - sqlalchemy.engine.Engine - INFO - [cached since 2.904s ago] (5,)
+2025-05-11 16:21:02,741 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-05-11 16:21:03,085 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 16:21:03,086 - sqlalchemy.engine.Engine - INFO - INSERT INTO user (name, email, created_at, updated_at) VALUES (?, ?, ?, ?)
+2025-05-11 16:21:03,086 - sqlalchemy.engine.Engine - INFO - [cached since 3.274s ago] ('tam', 'user@example.com', '2025-05-11 08:21:03.085250', '2025-05-11 08:21:03.085258')
+2025-05-11 16:21:03,087 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-11 16:21:03,101 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 16:21:03,102 - sqlalchemy.engine.Engine - INFO - SELECT user.name, user.email, user.id, user.created_at, user.updated_at 
+FROM user 
+WHERE user.id = ?
+2025-05-11 16:21:03,102 - sqlalchemy.engine.Engine - INFO - [cached since 3.265s ago] (6,)
+2025-05-11 16:21:03,104 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-05-11 16:22:23,605 - taskserver.app - INFO - Shutting down the application...
+2025-05-11 16:22:24,243 - taskserver.app - INFO - Starting up the application...
+2025-05-11 16:22:24,243 - taskserver.database - INFO - init database
+2025-05-11 16:22:24,244 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 16:22:24,244 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("taskreminder")
+2025-05-11 16:22:24,244 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 16:22:24,245 - sqlalchemy.engine.Engine - INFO - PRAGMA temp.table_info("taskreminder")
+2025-05-11 16:22:24,245 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 16:22:24,245 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("user")
+2025-05-11 16:22:24,246 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 16:22:24,246 - sqlalchemy.engine.Engine - INFO - PRAGMA temp.table_info("user")
+2025-05-11 16:22:24,246 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 16:22:24,247 - sqlalchemy.engine.Engine - INFO - 
+CREATE TABLE taskreminder (
+	scheduled_at DATETIME NOT NULL, 
+	assignee VARCHAR NOT NULL, 
+	content VARCHAR(50) NOT NULL, 
+	created_by VARCHAR NOT NULL, 
+	modified_by VARCHAR NOT NULL, 
+	reminder_type VARCHAR(5) NOT NULL, 
+	id INTEGER NOT NULL, 
+	created_at DATETIME NOT NULL, 
+	updated_at DATETIME NOT NULL, 
+	PRIMARY KEY (id)
+)
+
+
+2025-05-11 16:22:24,247 - sqlalchemy.engine.Engine - INFO - [no key 0.00027s] ()
+2025-05-11 16:22:24,271 - sqlalchemy.engine.Engine - INFO - 
+CREATE TABLE user (
+	name VARCHAR NOT NULL, 
+	email VARCHAR NOT NULL, 
+	id INTEGER NOT NULL, 
+	created_at DATETIME NOT NULL, 
+	updated_at DATETIME NOT NULL, 
+	PRIMARY KEY (id)
+)
+
+
+2025-05-11 16:22:24,272 - sqlalchemy.engine.Engine - INFO - [no key 0.00025s] ()
+2025-05-11 16:22:24,289 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-11 16:24:38,173 - taskserver.app - INFO - Shutting down the application...
+2025-05-11 16:24:39,134 - taskserver.app - INFO - Starting up the application...
+2025-05-11 16:24:39,135 - taskserver.database - INFO - init database
+2025-05-11 16:24:39,135 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 16:24:39,136 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("taskreminder")
+2025-05-11 16:24:39,136 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 16:24:39,137 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("user")
+2025-05-11 16:24:39,137 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 16:24:39,137 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-11 16:25:17,142 - taskserver.app - INFO - Shutting down the application...
+2025-05-11 16:25:17,825 - taskserver.app - INFO - Starting up the application...
+2025-05-11 16:25:17,825 - taskserver.database - INFO - init database
+2025-05-11 16:25:17,825 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 16:25:17,826 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("taskreminder")
+2025-05-11 16:25:17,826 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 16:25:17,826 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("user")
+2025-05-11 16:25:17,826 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 16:25:17,827 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-11 16:28:31,217 - taskserver.app - INFO - Shutting down the application...
+2025-05-11 16:28:31,810 - taskserver.app - INFO - Starting up the application...
+2025-05-11 16:28:31,810 - taskserver.database - INFO - init database
+2025-05-11 16:28:31,811 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 16:28:31,811 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("taskreminder")
+2025-05-11 16:28:31,811 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 16:28:31,812 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("user")
+2025-05-11 16:28:31,812 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 16:28:31,813 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-11 16:28:40,960 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 16:28:40,964 - sqlalchemy.engine.Engine - INFO - SELECT user.name AS user_name, user.email AS user_email, user.id AS user_id, user.created_at AS user_created_at, user.updated_at AS user_updated_at 
+FROM user 
+WHERE user.email = ?
+ LIMIT ? OFFSET ?
+2025-05-11 16:28:40,964 - sqlalchemy.engine.Engine - INFO - [generated in 0.00065s] ('user@example.com', 1, 0)
+2025-05-11 16:28:40,967 - sqlalchemy.engine.Engine - INFO - INSERT INTO user (name, email, created_at, updated_at) VALUES (?, ?, ?, ?)
+2025-05-11 16:28:40,968 - sqlalchemy.engine.Engine - INFO - [generated in 0.00045s] ('tam', 'user@example.com', '2025-05-11 08:28:40.966058', '2025-05-11 08:28:40.966069')
+2025-05-11 16:28:40,969 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-11 16:28:40,985 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 16:28:40,987 - sqlalchemy.engine.Engine - INFO - SELECT user.name, user.email, user.id, user.created_at, user.updated_at 
+FROM user 
+WHERE user.id = ?
+2025-05-11 16:28:40,988 - sqlalchemy.engine.Engine - INFO - [generated in 0.00057s] (1,)
+2025-05-11 16:28:40,990 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-05-11 16:28:43,462 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 16:28:43,462 - sqlalchemy.engine.Engine - INFO - SELECT user.name AS user_name, user.email AS user_email, user.id AS user_id, user.created_at AS user_created_at, user.updated_at AS user_updated_at 
+FROM user 
+WHERE user.email = ?
+ LIMIT ? OFFSET ?
+2025-05-11 16:28:43,463 - sqlalchemy.engine.Engine - INFO - [cached since 2.5s ago] ('user@example.com', 1, 0)
+2025-05-11 16:28:43,464 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-05-11 16:28:50,357 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 16:28:50,358 - sqlalchemy.engine.Engine - INFO - SELECT user.name AS user_name, user.email AS user_email, user.id AS user_id, user.created_at AS user_created_at, user.updated_at AS user_updated_at 
+FROM user 
+WHERE user.email = ?
+ LIMIT ? OFFSET ?
+2025-05-11 16:28:50,358 - sqlalchemy.engine.Engine - INFO - [cached since 9.394s ago] ('user@example.com', 1, 0)
+2025-05-11 16:28:50,359 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-05-11 16:29:06,285 - taskserver.app - INFO - Shutting down the application...
+2025-05-11 16:29:06,856 - taskserver.app - INFO - Starting up the application...
+2025-05-11 16:29:06,857 - taskserver.database - INFO - init database
+2025-05-11 16:29:06,857 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 16:29:06,857 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("taskreminder")
+2025-05-11 16:29:06,858 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 16:29:06,858 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("user")
+2025-05-11 16:29:06,858 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 16:29:06,859 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-11 16:29:14,995 - taskserver.app - INFO - Shutting down the application...
+2025-05-11 16:29:15,721 - taskserver.app - INFO - Starting up the application...
+2025-05-11 16:29:15,721 - taskserver.database - INFO - init database
+2025-05-11 16:29:15,721 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 16:29:15,722 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("taskreminder")
+2025-05-11 16:29:15,722 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 16:29:15,722 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("user")
+2025-05-11 16:29:15,722 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 16:29:15,723 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-11 16:31:31,076 - taskserver.app - INFO - Shutting down the application...
+2025-05-11 16:31:31,798 - taskserver.app - INFO - Starting up the application...
+2025-05-11 16:31:31,798 - taskserver.database - INFO - init database
+2025-05-11 16:31:31,798 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 16:31:31,799 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("taskreminder")
+2025-05-11 16:31:31,799 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 16:31:31,799 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("user")
+2025-05-11 16:31:31,800 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 16:31:31,800 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-11 16:31:39,233 - taskserver.app - INFO - Shutting down the application...
+2025-05-11 16:32:46,867 - taskserver.app - INFO - Starting up the application...
+2025-05-11 16:32:46,867 - taskserver.database - INFO - init database
+2025-05-11 16:32:46,868 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 16:32:46,868 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("taskreminder")
+2025-05-11 16:32:46,868 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 16:32:46,869 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("user")
+2025-05-11 16:32:46,869 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 16:32:46,869 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-11 16:33:45,743 - taskserver.app - INFO - Shutting down the application...
+2025-05-11 16:33:46,440 - taskserver.app - INFO - Starting up the application...
+2025-05-11 16:33:46,440 - taskserver.database - INFO - init database
+2025-05-11 16:33:46,441 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 16:33:46,441 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("taskreminder")
+2025-05-11 16:33:46,442 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 16:33:46,442 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("user")
+2025-05-11 16:33:46,443 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 16:33:46,443 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-11 16:34:30,151 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 16:34:30,155 - sqlalchemy.engine.Engine - INFO - SELECT user.name, user.email, user.id, user.created_at, user.updated_at 
+FROM user 
+WHERE user.email LIKE ?
+2025-05-11 16:34:30,156 - sqlalchemy.engine.Engine - INFO - [generated in 0.00044s] ('%example%',)
+2025-05-11 16:34:30,167 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-05-11 16:34:41,329 - taskserver.app - INFO - Shutting down the application...
+2025-05-11 16:34:41,986 - taskserver.app - INFO - Starting up the application...
+2025-05-11 16:34:41,986 - taskserver.database - INFO - init database
+2025-05-11 16:34:41,987 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 16:34:41,987 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("taskreminder")
+2025-05-11 16:34:41,987 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 16:34:41,988 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("user")
+2025-05-11 16:34:41,988 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 16:34:41,989 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-11 16:35:06,603 - taskserver.app - INFO - Shutting down the application...
+2025-05-11 16:35:07,329 - taskserver.app - INFO - Starting up the application...
+2025-05-11 16:35:07,329 - taskserver.database - INFO - init database
+2025-05-11 16:35:07,330 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 16:35:07,330 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("taskreminder")
+2025-05-11 16:35:07,330 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 16:35:07,331 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("user")
+2025-05-11 16:35:07,331 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 16:35:07,332 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-11 16:36:28,253 - taskserver.app - INFO - Shutting down the application...
+2025-05-11 16:36:28,980 - taskserver.app - INFO - Starting up the application...
+2025-05-11 16:36:28,980 - taskserver.database - INFO - init database
+2025-05-11 16:36:28,981 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 16:36:28,981 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("taskreminder")
+2025-05-11 16:36:28,981 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 16:36:28,983 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("user")
+2025-05-11 16:36:28,983 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 16:36:28,983 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-11 16:36:43,918 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 16:36:43,924 - sqlalchemy.engine.Engine - INFO - SELECT user.name, user.email, user.id, user.created_at, user.updated_at 
+FROM user 
+WHERE user.email LIKE ?
+2025-05-11 16:36:43,924 - sqlalchemy.engine.Engine - INFO - [generated in 0.00040s] ('%example%',)
+2025-05-11 16:36:43,931 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-05-11 16:36:52,353 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 16:36:52,354 - sqlalchemy.engine.Engine - INFO - SELECT user.name, user.email, user.id, user.created_at, user.updated_at 
+FROM user
+2025-05-11 16:36:52,354 - sqlalchemy.engine.Engine - INFO - [generated in 0.00036s] ()
+2025-05-11 16:36:52,356 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-05-11 16:37:51,089 - taskserver.app - INFO - Shutting down the application...
+2025-05-11 16:37:51,997 - taskserver.app - INFO - Starting up the application...
+2025-05-11 16:37:51,997 - taskserver.database - INFO - init database
+2025-05-11 16:37:51,999 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 16:37:51,999 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("taskreminder")
+2025-05-11 16:37:52,000 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 16:37:52,001 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("user")
+2025-05-11 16:37:52,001 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 16:37:52,002 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-11 16:37:54,896 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 16:37:54,900 - sqlalchemy.engine.Engine - INFO - SELECT user.name, user.email, user.id, user.created_at, user.updated_at 
+FROM user 
+WHERE user.email = ?
+2025-05-11 16:37:54,901 - sqlalchemy.engine.Engine - INFO - [generated in 0.00041s] ('user@example.com',)
+2025-05-11 16:37:54,902 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-05-11 16:38:00,693 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 16:38:00,693 - sqlalchemy.engine.Engine - INFO - SELECT user.name, user.email, user.id, user.created_at, user.updated_at 
+FROM user 
+WHERE user.email = ?
+2025-05-11 16:38:00,694 - sqlalchemy.engine.Engine - INFO - [cached since 5.793s ago] ('user1@example.com',)
+2025-05-11 16:38:00,697 - sqlalchemy.engine.Engine - INFO - INSERT INTO user (name, email, created_at, updated_at) VALUES (?, ?, ?, ?)
+2025-05-11 16:38:00,698 - sqlalchemy.engine.Engine - INFO - [generated in 0.00065s] ('string', 'user1@example.com', '2025-05-11 08:38:00.694895', '2025-05-11 08:38:00.694903')
+2025-05-11 16:38:00,699 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-11 16:38:00,723 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 16:38:00,726 - sqlalchemy.engine.Engine - INFO - SELECT user.name, user.email, user.id, user.created_at, user.updated_at 
+FROM user 
+WHERE user.id = ?
+2025-05-11 16:38:00,727 - sqlalchemy.engine.Engine - INFO - [generated in 0.00036s] (2,)
+2025-05-11 16:38:00,728 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-05-11 16:38:06,867 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 16:38:06,867 - sqlalchemy.engine.Engine - INFO - SELECT user.name, user.email, user.id, user.created_at, user.updated_at 
+FROM user 
+WHERE user.email = ?
+2025-05-11 16:38:06,868 - sqlalchemy.engine.Engine - INFO - [cached since 11.97s ago] ('user2@example.com',)
+2025-05-11 16:38:06,870 - sqlalchemy.engine.Engine - INFO - INSERT INTO user (name, email, created_at, updated_at) VALUES (?, ?, ?, ?)
+2025-05-11 16:38:06,870 - sqlalchemy.engine.Engine - INFO - [cached since 6.173s ago] ('string', 'user2@example.com', '2025-05-11 08:38:06.869522', '2025-05-11 08:38:06.869535')
+2025-05-11 16:38:06,871 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-11 16:38:06,894 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 16:38:06,894 - sqlalchemy.engine.Engine - INFO - SELECT user.name, user.email, user.id, user.created_at, user.updated_at 
+FROM user 
+WHERE user.id = ?
+2025-05-11 16:38:06,895 - sqlalchemy.engine.Engine - INFO - [cached since 6.168s ago] (3,)
+2025-05-11 16:38:06,896 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-05-11 16:38:23,381 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 16:38:23,382 - sqlalchemy.engine.Engine - INFO - SELECT user.name, user.email, user.id, user.created_at, user.updated_at 
+FROM user 
+WHERE user.email LIKE ?
+2025-05-11 16:38:23,382 - sqlalchemy.engine.Engine - INFO - [generated in 0.00042s] ('%example%',)
+2025-05-11 16:38:23,384 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-05-11 16:38:29,545 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 16:38:29,546 - sqlalchemy.engine.Engine - INFO - SELECT user.name, user.email, user.id, user.created_at, user.updated_at 
+FROM user 
+WHERE user.email LIKE ?
+2025-05-11 16:38:29,547 - sqlalchemy.engine.Engine - INFO - [cached since 6.165s ago] ('%user%',)
+2025-05-11 16:38:29,550 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-05-11 16:38:35,673 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 16:38:35,673 - sqlalchemy.engine.Engine - INFO - SELECT user.name, user.email, user.id, user.created_at, user.updated_at 
+FROM user 
+WHERE user.email LIKE ?
+2025-05-11 16:38:35,674 - sqlalchemy.engine.Engine - INFO - [cached since 12.29s ago] ('%user1%',)
+2025-05-11 16:38:35,675 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-05-11 16:38:40,751 - taskserver.app - INFO - Shutting down the application...
+2025-05-11 16:38:41,591 - taskserver.app - INFO - Starting up the application...
+2025-05-11 16:38:41,591 - taskserver.database - INFO - init database
+2025-05-11 16:38:41,592 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-11 16:38:41,592 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("taskreminder")
+2025-05-11 16:38:41,593 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 16:38:41,594 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("user")
+2025-05-11 16:38:41,594 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-11 16:38:41,595 - sqlalchemy.engine.Engine - INFO - COMMIT
