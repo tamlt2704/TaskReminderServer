@@ -56,13 +56,13 @@ poetry run pytest -vvs
 6. docker
 ```
 # build image
-docker build -t task-reminder-server-app:latest . 
+docker build -t task-reminder-server-app . 
 
 # run locally
 docker run -p 8000:8000 task-reminder-server-app:latest 
 
 #tag and push to docker hub
-docker tag task-reminder-server-app:latest tamlt2704/task-reminder-server-app:latest 
+docker tag task-reminder-server-app tamlt2704/task-reminder-server-app:latest 
 
 docker push tamlt2704/task-reminder-server-app:latest
 ```
@@ -82,5 +82,7 @@ az group list --output table
 az group create --name DevResourceGroup --location westeurope
 
 #deployment
-az deployment group create --resource-group DevResourceGroup --template-file infra\\main.bicep --parameters appName=TaskReminderServer dockerImage=tamlt2704/task-reminder-server-app::latest
+az deployment group create --resource-group DevResourceGroup --template-file infra\\main.bicep --parameters appName=ReminderServer dockerImage=tamlt2704/task-reminder-server-app:latest
+
+yeasy/simple-web
 ```

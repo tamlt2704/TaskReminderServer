@@ -1,45 +1,23 @@
-# ---- Base image ----
-FROM python:3.10-slim AS base
+# Use official Python image
+FROM python:3.11
 
-# Set environment variables
-ENV PYTHONDONTWRITEBYTECODE=1 \
-    PYTHONUNBUFFERED=1
-
-# ---- Builder image ----
-FROM base AS builder
-
-# Install system dependencies
-RUN apt-get update && apt-get install -y curl build-essential && \
-    curl -sSL https://install.python-poetry.org | python3 - && \
-    ln -s /root/.local/bin/poetry /usr/local/bin/poetry
-
-# Set work directory
+# Set working directory
 WORKDIR /app
 
-# Copy only pyproject.toml and poetry.lock to install deps first (layer caching)
-COPY pyproject.toml poetry.lock* ./
+# Install Poetry
+RUN pip install poetry
 
-# Configure Poetry to not create virtualenvs
-RUN poetry config virtualenvs.create false
+# Copy project files
+COPY pyproject.toml poetry.lock /app/
 
 # Install dependencies
-RUN poetry install --no-interaction --no-ansi --no-root --only main
+RUN poetry install --no-root
 
-# ---- Final image ----
-FROM base
+# Copy the rest of the application
+COPY . /app
 
-# Set work directory
-WORKDIR /app
+# Expose port 8000
+EXPOSE 8000
 
-# Copy installed deps from builder
-COPY --from=builder /usr/local/lib/python3.10 /usr/local/lib/python3.10
-COPY --from=builder /usr/local/bin /usr/local/bin
-
-# Copy app source
-COPY . .
-
-# Expose port
-EXPOSE 8080
-
-# Run the app
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8080"]
+# Run FastAPI app with Uvicorn
+CMD ["poetry", "run", "uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]

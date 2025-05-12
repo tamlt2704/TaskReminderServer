@@ -1809,3 +1809,47 @@ CREATE TABLE taskreminder (
 2025-05-12 03:57:03,085 - sqlalchemy.engine.Engine - INFO - [no key 0.00024s] ()
 2025-05-12 03:57:03,104 - sqlalchemy.engine.Engine - INFO - COMMIT
 2025-05-12 03:57:27,822 - taskserver.app - INFO - Shutting down the application...
+2025-05-12 16:40:06,966 - taskserver.app - INFO - Starting up the application...
+2025-05-12 16:40:06,967 - taskserver.database - INFO - init database
+2025-05-12 16:40:06,967 - taskserver.database - INFO - removing file db.sqlite3
+2025-05-12 16:40:06,970 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-12 16:40:06,970 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("user")
+2025-05-12 16:40:06,971 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-12 16:40:06,972 - sqlalchemy.engine.Engine - INFO - PRAGMA temp.table_info("user")
+2025-05-12 16:40:06,972 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-12 16:40:06,972 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("taskreminder")
+2025-05-12 16:40:06,973 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-12 16:40:06,973 - sqlalchemy.engine.Engine - INFO - PRAGMA temp.table_info("taskreminder")
+2025-05-12 16:40:06,973 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-12 16:40:06,975 - sqlalchemy.engine.Engine - INFO - 
+CREATE TABLE user (
+	user_name VARCHAR NOT NULL, 
+	email VARCHAR NOT NULL, 
+	id INTEGER NOT NULL, 
+	created_at DATETIME NOT NULL, 
+	updated_at DATETIME NOT NULL, 
+	hashed_password VARCHAR, 
+	disabled BOOLEAN, 
+	PRIMARY KEY (id)
+)
+
+
+2025-05-12 16:40:06,975 - sqlalchemy.engine.Engine - INFO - [no key 0.00040s] ()
+2025-05-12 16:40:06,995 - sqlalchemy.engine.Engine - INFO - 
+CREATE TABLE taskreminder (
+	scheduled_at DATETIME NOT NULL, 
+	assignee VARCHAR NOT NULL, 
+	content VARCHAR(50) NOT NULL, 
+	created_by VARCHAR, 
+	modified_by VARCHAR, 
+	reminder_type VARCHAR(5) NOT NULL, 
+	id INTEGER NOT NULL, 
+	created_at DATETIME NOT NULL, 
+	updated_at DATETIME NOT NULL, 
+	PRIMARY KEY (id)
+)
+
+
+2025-05-12 16:40:06,995 - sqlalchemy.engine.Engine - INFO - [no key 0.00044s] ()
+2025-05-12 16:40:07,014 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-12 16:40:08,119 - taskserver.app - INFO - Shutting down the application...
