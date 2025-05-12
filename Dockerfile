@@ -39,7 +39,7 @@ COPY --from=builder /usr/local/bin /usr/local/bin
 COPY . .
 
 # Expose port
-EXPOSE 8000
+EXPOSE 8080
 
 # Run the app
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8080"]
