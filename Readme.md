@@ -83,6 +83,4 @@ az group create --name DevResourceGroup --location westeurope
 
 #deployment
 az deployment group create --resource-group DevResourceGroup --template-file infra\\main.bicep --parameters appName=ReminderServer dockerImage=tamlt2704/task-reminder-server-app:latest
-
-yeasy/simple-web
 ```
