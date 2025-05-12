@@ -1,35 +1,63 @@
 This is a simple task reminder server implemented using FastAPI and can be deployed to Azure with infrastructrure defined in bicep file.
 
-## How to 
+# How to 
 
-### 1. See live server
+## 1. See live server
 https://<deployed-app-url>.azurewebsites.net/docs#/
 
-### 2. Create a task
-#### 2.1 Create a user
-```
-curl -X 'POST' \
-  'https://<deployed-app-url>.azurewebsites.net/api/v1/users/' \
-  -H 'accept: application/json' \
-  -H 'Content-Type: application/json' \
-  -d '{
-  "user_name": "<user_name>",
-  "email": "<user_email@example.com>",
-  "password": "<password>"
-}'
-```
+## 2. Create a task
+### 2.1 Create a user
+POST /api/v1/users
 
+Example:
+```
+{
+  "user_name": "demo",
+  "email": "demo@example.com",
+  "password": "admin123"
+}
+```
 ### 2.2 Login to get the access token
+
+POST /api/v1/token
+
+using user name and password. Example: demo/admin123
+
+### 2.3 Create a task
+POST /api/v1/tasks
+
+## 3. Adjust existing Task Reminder
+### 3.1 Get task id 
+GET /api/v1/tasks/usertask/{username}
+
+Example: /api/v1/tasks/usertask/demo. This should return tasks assiged to user with id
+
+### 3.2 Updating Task Reminder (login required, see step 2.2)
+PUT /api/v1/tasks/{taskid}
+
+Example
 ```
-curl -X 'POST' \
-  'https://<deployed-app-url>.azurewebsites.net/token' \
-  -H 'accept: application/json' \
-  -H 'Content-Type: application/x-www-form-urlencoded' \
-  -d 'grant_type=password&username=<user_name>&password=<password>&scope=&client_id=string&client_secret=string'
+{
+  "reminder_type": "slack" # change reminder type to slack
+}
 ```
 
+## 4. Delete existing Task Reminder
+DELETE /api/v1/tasks/{taskid}
+
+## 5. List existing Task Reminders
+GET /api/v1/tasks/usertask/{username}
+
+## 6. Show details of a specific Task Reminder
+GET /api/v1/tasks/{taskid}
 
 
+# TODO
+* Add more testing 
+* Update github workflow to deploy to azure cloud (currently just able to update docker image once pushed to main branch)
+* Using proper database (e.g: postgresql) instead of sqlite
+
+----------------------------
 DEV notes
 
 1. init project 
