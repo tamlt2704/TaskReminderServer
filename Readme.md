@@ -3,7 +3,7 @@ This is a simple task reminder server implemented using FastAPI and can be deplo
 # How to 
 
 ## 1. See live server
-https://<deployed-app-url>.azurewebsites.net/docs#/
+https://[app-name].azurewebsites.net/docs#/
 
 ## 2. Create a task
 ### 2.1 Create a user
